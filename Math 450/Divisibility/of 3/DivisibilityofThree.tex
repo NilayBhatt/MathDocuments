@@ -1,0 +1,78 @@
+\documentclass[12pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\oddsidemargin}{-1.7cm}
+\setlength{\topmargin}{-3.2cm}
+%\setlength{\baselineskip}{20pt}
+\setlength{\textwidth}{19cm}
+\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+
+
+\begin{document}
+
+\begin{flushleft}
+\textbf{Nilay Bhatt Feb. 19 2017}		
+\end{flushleft}
+
+\begin{center}
+	\textbf{Divisibility of Three}
+\end{center}
+
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+
+\begin{center}
+\textbf{A number is divisible by three if and only if the sum of the digits is divisible by 3.}
+\end{center}
+
+\begin{proof}
+$\Rightarrow$ Let $\beta$ be a whole number divisible by $3$. We can then define $\beta$ as:
+\begin{align*}
+\beta &= \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i\\
+(\beta)\mod 3 &= ( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \mod 3\\
+0 &= ( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \mod 3  \\
+&= ( (\beta_0*10^0) \mod 3 + (\beta_1 * 10^1) \mod 3 + (\beta_2 * 10^2) \mod 3 + ... + (\beta_i * 10^i) \mod 3 )\mod 3 \\
+&= ( ((\beta_0)\mod 3*(10^0)\mod3) \mod 3 + ((\beta_1)\mod 3 * (10^1)\mod 3) \mod 3 \\& +((\beta_2)\mod 3 * (10^2))\mod 3) \mod 3 + ... + ((\beta_i)\mod 3 * (10^i)\mod 3) \mod 3 )\mod 3 \\
+&=( ((\beta_0)\mod 3*1) \mod 3 + ((\beta_1)\mod 3 * 1) \mod 3 +((\beta_2)\mod 3 * 1)\mod 3) \\& + \mod 3 + ... + ((\beta_i)\mod 3 * 1) \mod 3 )\mod 3\\
+&= ( (\beta_0) \mod 3 + (\beta_1)\mod 3+(\beta_2)\mod 3 + ... + (\beta_i)\mod 3 )\mod 3\\
+0 &= ( \beta_0+ \beta_1 + \beta_2 + ... + \beta_i )\mod 3
+\end{align*}
+We are using the properties of modular arithmetic over here. We are using the following properties:
+\begin{enumerate}
+\item
+	$(A + B) \mod C = ((A \mod C) + (B \mod C)) \mod C$
+	\\and
+\item
+	$(A * B) \mod C = ((A \mod C) * (B \mod C)) \mod C$
+\end{enumerate}
+Thus if a number is divisible by three then the sum if it's digits are also divisible by three.\\ \\
+$\Leftarrow$ Let$\beta$ be a whole number such that the sum of its digits ($\beta_0+ \beta_1 + \beta_2 + ... + \beta_i $) is divisible by 3. Then we can say:
+\begin{align*}
+( \beta_0+ \beta_1 + \beta_2 + ... + \beta_i )\mod 3 &= 0\\
+( (\beta_0) \mod 3 + (\beta_1)\mod 3+(\beta_2)\mod 3 + ... + (\beta_i)\mod 3 )\mod 3 &= \\
+( ((\beta_0)\mod 3*1) \mod 3 + ((\beta_1)\mod 3 * 1) \mod 3 +((\beta_2)\mod 3 * 1)\mod 3)+&\\ \mod 3 + ... + ((\beta_i)\mod 3 * 1) \mod 3 )\mod 3 &=\\
+( ((\beta_0)\mod 3*(10^0)\mod3) \mod 3 + ((\beta_1)\mod 3 * (10^1)\mod 3) \mod 3 & +\\((\beta_2)\mod 3 * (10^2))\mod 3) \mod 3 + ... + ((\beta_i)\mod 3 * (10^i)\mod 3) \mod 3 )\mod 3 &= \\
+( (\beta_0*10^0) \mod 3 + (\beta_1 * 10^1) \mod 3 + (\beta_2 * 10^2) \mod 3 + ... + (\beta_i * 10^i) \mod 3 )\mod 3 &=\\
+( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \mod 3 &= 0\\
+( \beta) \mod 3 &= 0
+\end{align*}
+
+Thus if the sum of the digits of a number are divisible by 3 then then number itself is divisible by 3.
+
+\end{proof}
+
+\end{document}
