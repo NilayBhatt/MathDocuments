@@ -1,0 +1,50 @@
+\documentclass[12pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\oddsidemargin}{-1.7cm}
+\setlength{\topmargin}{-3.2cm}
+%\setlength{\baselineskip}{20pt}
+\setlength{\textwidth}{19cm}
+\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+
+
+\begin{document}
+
+\begin{flushleft}
+\textbf{Nilay Bhatt Feb. 20 2017}		
+\end{flushleft}
+
+\begin{center}
+{\bf MATH 450 Seminar in Proof}
+\end{center}
+
+\begin{center}
+\textbf{0.$\bar{9}$ = 1}
+\end{center}
+
+\begin{proof}
+We know that:
+\begin{align*}
+0.9 &= \dfrac{9}{10} + \dfrac{9}{100} + \dfrac{9}{1000} + \dfrac{9}{100000} + ....\\
+&= 9(\dfrac{1}{10} + \dfrac{1}{100} + \dfrac{1}{1000} + \dfrac{1}{100000} + ....)\\
+&= 9 \sum_{n=1}^{\infty}\dfrac{1}{10^n} \\
+&= 9 (\dfrac{\dfrac{1}{10}}{1-\dfrac{1}{10}})\\
+&= 9 (\dfrac{\dfrac{1}{10}}{\dfrac{9}{10}})
+&= 1
+\end{align*}
+Thus proved.
+
+\end{proof}
+
+\end{document}

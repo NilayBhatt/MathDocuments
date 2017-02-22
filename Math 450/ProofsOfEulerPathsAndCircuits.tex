@@ -45,6 +45,12 @@ $Proof:$
  	$\Rightarrow$ Let $G$ be a graph such that it has an Euler circuit. According to the definition of Euler Circuit on a graph, given a vertex $v_1$, we can traverse every other node only once and end at the vertex $v_1$. Thus every node/vertex has one entry point and one exit point. We know this because $G$ has an Euler circuit. Thus every node/vertex has two edges attached to it thus making it a node of even degree. \\
  	$\Leftarrow$ Let every node in a graph $G$ have an even degree. Let us prove this by induction. Assume, that there are only two nodes in $G$, each with two edges on them. Thus it is clear that you will end on the same node that you started with, thus making a Euler circuit on $G$. \\
  	Now,let $G$ be  graph of even degree with more than two nodes. Lets start with an arbitrary node $v_1$. Now since every node has an even degree, we can follow a trail from $v_1$ to the next node and repeat it for the next node we encounter. We know that this is possible because each time we enter a node $v_k$ we know there is an unused edge adjacent to it for us to use to traverse. Thus using a unique path we will come back on $v_1$ since there are even number of edges, we will always find an untapped edge to let us continue our path back to $v_1$.
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth	]{circuit.jpg}
+  \caption{A Euler Circuit.}
+  \label{fig:ec1}
+\end{figure} 	
+ 	Figure 1. \ref{fig:ec1}Euler Circuit
 	\item
 	Let $G$ be a graph with Euler circuit. Thus every node/vertex has an even degree. now let us add one node say $b$ and add an edge to a node $a$ in the existing graph $G$. Note that before adding the edge from $b$ to $a$, $a$ in $G$ had an even degree. Now if we start drawing our path from $b$, and since it has only one edge connecting to $a$ we go to $a$ now, if we hypothetically ignore the edge connecting $a$ and $b$, the remainder of $G$ has nodes with even edges, thus making it a Euler circuit. Therefore, the trail will end at $a$ but since we have already used the edge connecting $a$ and $b$, we stop at $a$. Thus we were able to traverse all the edges in $G$ +$b$ exactly once, starting from $b$ and ending at an edge $a$ in $G$.
 \end{enumerate}

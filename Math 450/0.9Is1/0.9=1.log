@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  20 FEB 2017 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  20 FEB 2017 16:07
 entering extended mode
-**./ProofsOfEulerPathsAndCircuits.tex
-(ProofsOfEulerPathsAndCircuits.tex
+**./0.9=1.tex
+(0.9=1.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -171,8 +171,8 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 LaTeX Warning: Unused global option(s):
     [fullpage].
 
-(ProofsOfEulerPathsAndCircuits.aux)
-\openout1 = `ProofsOfEulerPathsAndCircuits.aux'.
+(0.9=1.aux)
+\openout1 = `0.9=1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -245,55 +245,44 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+) [1
 
- []
-
-<circuit.jpg, id=1, 1424.32124pt x 213.79875pt>
-File: circuit.jpg Graphic file (type jpg)
- <use circuit.jpg>
-Package pdftex.def Info: circuit.jpg used on input line 49.
-(pdftex.def)             Requested size: 540.60236pt x 81.14648pt.
- [1
-
-{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./circuit.j
-pg>]
-[2] (ProofsOfEulerPathsAndCircuits.aux) ) 
+{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (0.9=1.aux)
+ ) 
 Here is how much of TeX's memory you used:
- 2596 strings out of 493333
- 34106 string characters out of 3139194
- 96751 words of memory out of 3000000
- 6078 multiletter control sequences out of 15000+200000
- 9616 words of font info for 38 fonts, out of 3000000 for 9000
+ 2586 strings out of 493333
+ 33749 string characters out of 3139194
+ 95743 words of memory out of 3000000
+ 6071 multiletter control sequences out of 15000+200000
+ 9257 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,26p,789b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ProofsOfEulerPathsAndCircuits.pdf (2 pages, 170888 bytes).
+ 40i,11n,26p,287b,181s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
+pfb>
+Output written on 0.9=1.pdf (1 page, 81446 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
