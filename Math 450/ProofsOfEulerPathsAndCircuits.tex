@@ -31,13 +31,29 @@
 {\bf MATH 450 Seminar in Proof}
  \\
 \end{center}
-\textbf{Definition 1.1: \textit{Euler Path: }}An \textit{Euler Path} on a graph $G$ is a path that traverses each edge exactly once.\\
-\textbf{Definition 1.2: \textit{Euler Circuit/Cycle: }}An Euler circuit on a graph $G$ is a Euler Path which starts and ends on the same node.\\ \\
+\textbf{Definition 1.1: \textit{Graph: }}A $graph$ is a pair $G = (V,E)$. The elements of $V$ are the vertices (or nodes or points) and the elements of $E$ are edges (or lines) connecting the vertices.\\
+
+\textbf{Note:}	The vertex on $G$ are referred to as $V(G)$ and the edges on $G$ are referred to $E(G)$. This is independent of the way we define a graph.\\
+
+\textbf{Definition 1.2: \textit{Degree of a Vertex:}}: Let $G = (V,E)$ be a non empty graph is the number of edges ($E(G)$) attached to a vertex $v \in V(G)$ in $G$.\\
+
+\textbf{Definition 1.3: \textit{Euler Path: }}An \textit{Euler Path} on a graph $G$ is a path that traverses each edge exactly once.\\
+
+\textbf{Definition 1.4: \textit{Euler Circuit/Cycle: }}An Euler circuit on a graph $G$ is a Euler Path which starts and ends on the same node.\\
+
+\textbf{Definition 1.5: \textit{Walk}}: A walk on a graph $G$ is a unique path using edges and vertex of $G$\\
+
+\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a graph has a degree of at least two, then $G$ has a cycle/walk.
+\begin{proof}
+
+Let $G$ be a graph. Let $v$ be a vertex in $G$ such that $v$ has at least two degree. Let us construct a walk starting from $v \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_k$, where $v_1, v_2, v_3, ... , v_k$ are adjacent to one another (connected with each other with an edge). We can do this recursively starting from $v$ and going to the next adjacent vertex $v_1$ and repeat the process for all $k>1$.
+\end{proof}
+
 \textbf{Results to be proven: }
 
 \begin{enumerate}
-	\item Show that any graph where the degree of every vertex is even iff it has an Eulerian circuit.
-	\item Show that if there are exactly two vertices a and b of odd degree, there is an Eulerian path on the graph.
+	\item Any graph where the degree of every vertex is even iff it has an Euler circuit.
+	\item If there are exactly two vertices $a$ and $b$ of odd degree, there is an Euler path on the graph.
 \end{enumerate}
 $Proof:$
 \begin{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  20 FEB 2017 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  28 FEB 2017 18:29
 entering extended mode
 **./ProofsOfEulerPathsAndCircuits.tex
 (ProofsOfEulerPathsAndCircuits.tex
@@ -260,38 +260,63 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 <circuit.jpg, id=1, 1424.32124pt x 213.79875pt>
 File: circuit.jpg Graphic file (type jpg)
  <use circuit.jpg>
-Package pdftex.def Info: circuit.jpg used on input line 49.
+Package pdftex.def Info: circuit.jpg used on input line 65.
 (pdftex.def)             Requested size: 540.60236pt x 81.14648pt.
  [1
 
-{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./circuit.j
-pg>]
-[2] (ProofsOfEulerPathsAndCircuits.aux) ) 
+{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./circu
+it.jpg>]
+(ProofsOfEulerPathsAndCircuits.aux) ) 
 Here is how much of TeX's memory you used:
  2596 strings out of 493333
  34106 string characters out of 3139194
- 96751 words of memory out of 3000000
+ 97751 words of memory out of 3000000
  6078 multiletter control sequences out of 15000+200000
  9616 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,26p,789b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ProofsOfEulerPathsAndCircuits.pdf (2 pages, 170888 bytes).
+ 40i,6n,26p,795b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ProofsOfEulerPathsAndCircuits.pdf (2 pages, 180169 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
