@@ -41,12 +41,11 @@
 
 \textbf{Definition 1.4: \textit{Euler Circuit/Cycle: }}An Euler circuit on a graph $G$ is a Euler Path which starts and ends on the same node.\\
 
-\textbf{Definition 1.5: \textit{Walk}}: A walk on a graph $G$ is a unique path using edges and vertex of $G$\\
+\textbf{Definition 1.5: \textit{Walk}}: A walk on a graph $G$ is a unique path using edges and vertex of $G$.\\
 
-\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a graph has a degree of at least two, then $G$ has a cycle/walk.
+\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a graph has a degree of at least two, then $G$ has a $cycle$.
 \begin{proof}
-
-Let $G$ be a graph. Let $v$ be a vertex in $G$ such that $v$ has at least two degree. Let us construct a walk starting from $v \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_k$, where $v_1, v_2, v_3, ... , v_k$ are adjacent to one another (connected with each other with an edge). We can do this recursively starting from $v$ and going to the next adjacent vertex $v_1$ and repeat the process for all $k>1$.
+Let $G$ be a finite graph. Let $v$ be a vertex in $G$ such that $v$ has at least two degree. Let us construct a walk starting from $v$. Let $v_1$ be an adjacent vertex to $v$, $v_2$ be an adjacent vertex to $v_1$ and so on. So the walk we create will look like $v \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_k$. We can do this recursively all $k>1$ because of our hypothesis that each vertex has at least two degrees. Since $G$ is finite graph, the number of vertices it has is limited. Thus, while constructing our walk we will encounter a vertex $v_i$ which has already been traversed (already included in the walk). The path that was created from the first occurrence of $v_i$ to the second one is a $cycle$ from $v_i$ to $v_i$.
 \end{proof}
 
 \textbf{Results to be proven: }
@@ -58,9 +57,11 @@ Let $G$ be a graph. Let $v$ be a vertex in $G$ such that $v$ has at least two de
 $Proof:$
 \begin{enumerate}
 	\item
- 	$\Rightarrow$ Let $G$ be a graph such that it has an Euler circuit. According to the definition of Euler Circuit on a graph, given a vertex $v_1$, we can traverse every other node only once and end at the vertex $v_1$. Thus every node/vertex has one entry point and one exit point. We know this because $G$ has an Euler circuit. Thus every node/vertex has two edges attached to it thus making it a node of even degree. \\
- 	$\Leftarrow$ Let every node in a graph $G$ have an even degree. Let us prove this by induction. Assume, that there are only two nodes in $G$, each with two edges on them. Thus it is clear that you will end on the same node that you started with, thus making a Euler circuit on $G$. \\
+ 	$\Rightarrow$ Let $G$ be a graph which has Euler circuit $E$. When traversing $E$, when we come across any vertex $v$ through an edge $e_v(1)$, we know by definition there is another edge $e_v(2)$ that is connected to $v$. Thus making every vertex in $G$ at least degree two. Thus making every vertex in $G$ of even degree. \\\\
+ 	$\Leftarrow$ Let us proceed by induction. Let every vertex in a graph $G$ have an even degree. 
+ 	Assume, that there are only two nodes in $G$, each with two edges on them. Thus it is clear that you will end on the same node that you started with, thus making a Euler circuit on $G$. \\
  	Now,let $G$ be  graph of even degree with more than two nodes. Lets start with an arbitrary node $v_1$. Now since every node has an even degree, we can follow a trail from $v_1$ to the next node and repeat it for the next node we encounter. We know that this is possible because each time we enter a node $v_k$ we know there is an unused edge adjacent to it for us to use to traverse. Thus using a unique path we will come back on $v_1$ since there are even number of edges, we will always find an untapped edge to let us continue our path back to $v_1$.
+ 	\\\\
 \begin{figure}[h!]
   \includegraphics[width=\linewidth	]{circuit.jpg}
   \caption{A Euler Circuit.}
