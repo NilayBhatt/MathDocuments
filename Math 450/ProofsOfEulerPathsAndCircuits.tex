@@ -43,7 +43,7 @@
 
 \textbf{Definition 1.5: \textit{Walk}}: A walk on a graph $G$ is a unique path using edges and vertex of $G$.\\
 
-\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a graph has a degree of at least two, then $G$ has a $cycle$.
+\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a connected graph has every vertex of degree of at least two, then $G$ has a $cycle$.
 \begin{proof}
 Let $G$ be a finite graph. Let $v$ be a vertex in $G$ such that $v$ has at least two degree. Let us construct a walk starting from $v$. Let $v_1$ be an adjacent vertex to $v$, $v_2$ be an adjacent vertex to $v_1$ and so on. So the walk we create will look like $v \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_k$. We can do this recursively all $k>1$ because of our hypothesis that each vertex has at least two degrees. Since $G$ is finite graph, the number of vertices it has is limited. Thus, while constructing our walk we will encounter a vertex $v_i$ which has already been traversed (already included in the walk). The path that was created from the first occurrence of $v_i$ to the second one is a $cycle$ from $v_i$ to $v_i$.
 \end{proof}
@@ -51,23 +51,22 @@ Let $G$ be a finite graph. Let $v$ be a vertex in $G$ such that $v$ has at least
 \textbf{Results to be proven: }
 
 \begin{enumerate}
-	\item Any graph where the degree of every vertex is even iff it has an Euler circuit.
+	\item \textit{\textbf{(EULER (1736), HIERHOLZER (1873))}} Any connected graph where the degree of every vertex is even iff it has an Euler circuit.
 	\item If there are exactly two vertices $a$ and $b$ of odd degree, there is an Euler path on the graph.
 \end{enumerate}
 $Proof:$
 \begin{enumerate}
 	\item
- 	$\Rightarrow$ Let $G$ be a graph which has Euler circuit $E$. When traversing $E$, when we come across any vertex $v$ through an edge $e_v(1)$, we know by definition there is another edge $e_v(2)$ that is connected to $v$. Thus making every vertex in $G$ at least degree two. Thus making every vertex in $G$ of even degree. \\\\
- 	$\Leftarrow$ Let us proceed by induction. Let every vertex in a graph $G$ have an even degree. 
- 	Assume, that there are only two nodes in $G$, each with two edges on them. Thus it is clear that you will end on the same node that you started with, thus making a Euler circuit on $G$. \\
- 	Now,let $G$ be  graph of even degree with more than two nodes. Lets start with an arbitrary node $v_1$. Now since every node has an even degree, we can follow a trail from $v_1$ to the next node and repeat it for the next node we encounter. We know that this is possible because each time we enter a node $v_k$ we know there is an unused edge adjacent to it for us to use to traverse. Thus using a unique path we will come back on $v_1$ since there are even number of edges, we will always find an untapped edge to let us continue our path back to $v_1$.
+ 	$\Rightarrow$ Let $G$ be a connected graph which has Euler circuit $E$. When traversing $E$, when we come across any vertex $v$ through an edge $e_v(1)$, we know by definition there is another edge $e_v(2)$ that is connected to $v$. Thus making every vertex in $G$ at least degree two. Thus making every vertex in $G$ of even degree. \\
+ 	
+ 	$\Leftarrow$ Let us proceed by induction. Let every vertex in a connected graph $G$ have an even degree. If there are only two vertex in $G$. Thus it is clear that you will end on the same vertex that you started with, thus making a Euler circuit on $G$. \\
+ 	Now, let $G$ be connected graph with more than two vertices. From the lemma we know that there exists a cycle in $G$. If a cycle covers all the vertices in $G$ then we are done. Let's say it does not. Then there exists a cycle $C$ in $G$ which does not include all the vertices. Now, let us remove all the edges from $G$ that are in $C$. Call this new sub-graph $H$, by our hypothesis all the vertices in $H$ are still even and thus $H$ contains a cycle. Let us choose a common vertex $v$ in $C$ and $H$. We know this is possible because there are no isolated vertices in $G$. Now since $v$ still has an even degree we produce a cycle $C'$ in $H$ that starts and ends at $v$. If $C'$ has all the remaining edges in $H$ then we are done, and thus $G$ has a Euler circuit. If not we continue the above process recursively until all the vertices in $G$ are traversed. The final tour would be the union of all the cycles that we created recursively in $G$ and return to the initial vertex in $C$ where we started, thus making an Euler circuit in $G$.\\ They say a picture speaks a thousand words, below we try to illustrate what an Euler Circuit will look like on a graph where all the vertex have an even degree. 
  	\\\\
 \begin{figure}[h!]
   \includegraphics[width=\linewidth	]{circuit.jpg}
   \caption{A Euler Circuit.}
-  \label{fig:ec1}
-\end{figure} 	
- 	Figure 1. \ref{fig:ec1}Euler Circuit
+\end{figure}
+\newpage
 	\item
 	Let $G$ be a graph with Euler circuit. Thus every node/vertex has an even degree. now let us add one node say $b$ and add an edge to a node $a$ in the existing graph $G$. Note that before adding the edge from $b$ to $a$, $a$ in $G$ had an even degree. Now if we start drawing our path from $b$, and since it has only one edge connecting to $a$ we go to $a$ now, if we hypothetically ignore the edge connecting $a$ and $b$, the remainder of $G$ has nodes with even edges, thus making it a Euler circuit. Therefore, the trail will end at $a$ but since we have already used the edge connecting $a$ and $b$, we stop at $a$. Thus we were able to traverse all the edges in $G$ +$b$ exactly once, starting from $b$ and ending at an edge $a$ in $G$.
 \end{enumerate}
