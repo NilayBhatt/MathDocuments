@@ -36,6 +36,7 @@
 (or nodes), and a finite set $E(G)$ of distinct unordered pairs of distinct elements of $V(G)$
 called edges. We call $V(G)$ the vertex set and $E(G)$ the edge set of $G$. An edge ${v, w}$
 is said to join the vertices $v$ and $w$, and is usually abbreviated to $vw$. \\
+
 \textbf{Note:}	The vertex on $G$ are referred to as $V(G)$ and the edges on $G$ are referred to $E(G)$. This is independent of the way we define a graph. Meaning, if we define a graph $H = (W,Q)$ the set of vertices in $H$ is referred as $V(H)$ and the set of edges in $H$ is referred as $E(H$ and not $W(H)$ and  $Q(H)$ respectively.\\
 
 \textbf{Definition 1.2: \textit{Adjacency:}}: We say that two vertices $v$ and $w$ of a graph $G$ are \textbf{adjacent} if there is an edge $vw$ joining
@@ -45,6 +46,7 @@ distinct edges $e$ and $f$ are adjacent if they have a vertex in common.\\
 \textbf{Definition 1.3: \textit{Degree of a Vertex:}}: The degree of a vertex $v$ of $G$ is the number of edges incident with $v$, and is written
 $deg(v)$; in calculating the degree of $v$, we usually make the convention that a loop at $v$
 contributes 2 (rather than 1) to the degree of $v$. A vertex of degree 0 is an isolated vertex and a vertex of degree 1 is an end-vertex.\\
+
 \textbf{Note:} A graph is \textit{\textbf{connected}} if it cannot be expressed as the union of two graphs, and disconnected otherwise. Or, in simpler words, if a graph does not have any isolated or end-vertex, then the graph is \textit{\textbf{connected}}. \\
 
 \textbf{Definition 1.4: \textit{Subgraph:}}:A \textit{subgraph} of a graph $G$ is a graph, each of whose vertices belongs to $V(G)$ and each of whose edges belongs to $E(G)$.\\
@@ -52,9 +54,10 @@ contributes 2 (rather than 1) to the degree of $v$. A vertex of degree 0 is an i
 \textbf{Definition 1.5: \textit{Walk}}: Given a graph $G$, a walk in $G$ is a finite sequence of distinct edges of the form $v_0v_1$, $v_1v_2$,...,$v_{m-1}v_m$, also denoted by $v_0 \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_m$, in which any two consecutive edges are adjacent or identical.  If $v_0 = v_m$ then we call the walk a cycle.\\
 
 \textbf{Definition 1.6: \textit{Euler Path: }}An \textit{Euler Path} on a graph $G$ is a special $walk$ that uses each edge exactly once.\\
-\textbf{Definition 1.7: \textit{Euler Circuit/Cycle: }}An Euler circuit on a graph $G$ is a Euler Path which starts and ends on the same vertex.
 
-\textbf{Definition 1.8: \textit{Traversing: }}The process of passing through each vertex using the edges joining them in a walk or a path or a cycle or a trail.
+\textbf{Definition 1.7: \textit{Euler Circuit/Cycle: }}An Euler circuit on a graph $G$ is a Euler Path which starts and ends on the same vertex.\\
+
+\textbf{Definition 1.8: \textit{Traversing: }}The process of passing through each vertex using the edges joining them in a walk or a path or a cycle or a trail.\\ \\
 
 \textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a connected finite graph has every vertex of degree of at least two, then $G$ has a \textit{\textbf{cycle}}.
 \begin{proof}
