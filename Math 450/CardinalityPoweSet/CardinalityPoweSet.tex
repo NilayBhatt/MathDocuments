@@ -1,0 +1,42 @@
+\documentclass[14pt]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim, extsizes}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Prove by induction that $|P(A)| = 2^n$ if $|A| = n$.\\
+\begin{proof}
+	 by induction. \\
+	
+	\textbf{Base Case:} Let $A$ be a set with 0 elements. Then the $P(A) = \{ \emptyset \}$. Thus $|P(A)| = 1 = 2^0$.\\
+	\textbf{Inductive Hypothesis:} Assume if $|A| = n$ then $|P(A)| = 2^n$ is true.
+	\textbf{Inductive Step:}
+	\\ We will prove that if $|A| = n+1$ then, $|P(A)| = 2^{n+1}$ Now, let the set $|A| = n+1$, then let $B = A - \{a\}$ where $a \in A$ be a specific element. Then $|B| = n$. Thus $|P(B)| = 2^n$ from our hypothesis.
+	
+	 Also we can split the subsets of $A$ in to parts, namely one containing $a$ and one that does not $i.e$ $B$. Note that $P(B)$ does not have any sets in it that has $a$. Let $B_1, B_2, B_3,...,B_{2^n}$ be the elements of $P(B)$. Then, $B_1 \cup \{a\} \in P(A)$, $B_2 \cup \{a\} \in P(A)$, $B_3 \cup \{a\} \in P(A)$, ..., $B_{2^n} \cup \{a\} \in P(A)$ gets us the subsets of $A$ that contain the element $a$. Since the union produces $2^n$ elements and $|P(B)| =2^n$, then $|P(A)| = 2^n + 2^n = 2^n(1+1) = 2^{n+1}$. 
+\end{proof}
+\end{document}
