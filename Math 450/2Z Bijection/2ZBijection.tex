@@ -1,0 +1,57 @@
+\documentclass[12pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Let $f: \Z \rightarrow 2\Z$ be defined by $f(x) = 2x - 6.$ Prove that $f$ is a bijection.
+\begin{proof}
+	Let $f$ be the function defined as in the question.\\
+	\textit{One-to-One:} Let $f(x_1) = f(x_2)$, then \\
+	\begin{equation}
+	2x_1 - 6 = 2x_2 - 6
+	\end{equation}
+	\begin{equation}	
+	2x_1 = 2x_2
+	\end{equation}
+	\begin{equation}
+	x_1 = x_1 
+	\end{equation}
+	This  means that if $f(x_1) = f(x_2)$ then, $x_1 = x_1$ thus $f$ is one to one.
+
+	\textit{Onto:} Let $x \in \Z$ and $y \in 2\Z$ such that, $x = \dfrac{y+6}{2}$. \\
+	\begin{equation}			
+		\begin{split}
+			f(x) &= 2x - 6 \\ 
+				 &= 2\left(\dfrac{y+6}{2}\right) - 6\\
+				 &= y+6-6\\
+			f(x) &= y			
+		\end{split}
+	\end{equation}
+	This  means that for every $y \in 2\Z$ there exists an $x \in \Z$ .
+	Thus $f$ is a bijecction.
+\end{proof}
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass[12pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Every integer greater than 1 is expressible as a product of primes.
+\begin{proof}
+	Let us proceed by contradiction. Let $n$ > 1 be the least integer that cannot be expressed as a product of primes. By construction, $n$ has no divisors that are prime, so $n$ is not a prime number. Thus $n$ is composite number. Thus, there exists an integer $a$ $1 < a < n$ such that, $a$ divides $n$ such that $n = ab$ where $1<b<n$. Since $n$ is the smallest number that does not have prime factors, we can say that $a = p_1 \cdot p_2 \cdot p_3 \cdot ... \cdot p_n$ and $b = q_1 \cdot q_2 \cdot q_3 \cdot ... \cdot q_n$ where $p_i, q_i i \in \N$ are prime factors of $a$ and $b$. Thus if we rewrite $n = ab$ as $n = (p_1 \cdot p_2 \cdot p_3 \cdot ... \cdot p_n)(q_1 \cdot q_2 \cdot q_3 \cdot ... \cdot q_n)$. Now we are able to represent $n$ as a product of prime numbers. Thus $\rightarrow\leftarrow$. Therefore every integer greater than 1 is expressible as a product of primes.
+\end{proof}
+\end{document}
