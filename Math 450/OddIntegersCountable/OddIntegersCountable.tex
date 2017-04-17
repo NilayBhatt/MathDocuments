@@ -1,0 +1,55 @@
+\documentclass[14pt]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim, extsizes}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Prove that the set of odd integers are countable.
+\begin{proof}
+	 We know that a set $X$ is countable if there exists a bijection in $f: \N \rightarrow X$. We will show that $f:\N \rightarrow 2\Z - 1$ this is a well defined function and is a bijection. 
+	 Let \[
+f(n) =
+\begin{cases}
+ n & \text{if n is odd} \\
+ 1 - n & \text{if n is even}
+\end{cases}
+\]
+We first show that the function is well defined meaning $f(n) \in 2\Z - 1 $ for every $n \in N$. If $n$ is even then $n = 2k$, $k > 0 \in \Z$. Thus $f(n) = 1 - 2k$. Since $2k > 0$ and is even, $1 - 2k < 0$ and is odd, thus $f(n) \in 2\Z - 1$. If $n$ is odd then $n = 2k - 1$, where $k > 0 \in \Z$. Then $f(n) = n = 2k - 1 \in \Z$. Thus our function is well defined. Now we will prove that it is bijective.
+
+\textbf{One-to-One: \\}
+Let $f(a) = f(b)$ where $a,b \in \N$. Then since, $f(a)= f(b)$ we know that either $f(a) = a$ and $f(b) = b$ or $f(a) = 1 - a$ and $f(b) = 1 - b$. In both the cases we get $a=b$ if $f(a) = f(b)$. Thus the function is one-to-one.\\ \textbf{Onto: \\}
+Let $y \in \Z$. If $y > 0$ then we have $f(n) = y \rightarrow n = y$. Since $y > 0 \rightarrow n > 0 \in \N$. Thus $y = n \in \N$. If $y < 0$ then we have $ y = 1 -n$. Solving for $n$ we get $n = 1 - y$. Since $y <0$, $-y > 0$ and thus $-y + 1 > 0$. Thus $-y+1 = n \in \N$. Hence, the function is onto.
+
+Thus the $f:\N \rightarrow 2\Z - 1$ with \[
+f(n) =
+\begin{cases}
+ n & \text{if n is odd} \\
+ 1 - n & \text{if n is even}
+\end{cases}
+\] is well defined and is bijective. Thus the set of odd integers are countable.
+\end{proof}
+\end{document}

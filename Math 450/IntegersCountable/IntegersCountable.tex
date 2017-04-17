@@ -1,0 +1,53 @@
+\documentclass[14pt]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim, extsizes}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Prove that the set of integers are countable.
+\begin{proof}
+	 We know that a set $X$ is countable if there exists a bijection in $f: \N \rightarrow X$. We know that $f:\N \rightarrow \Z$ is a well defined function from the class lecture. So we will show that it is a bijection. 
+	 Let \[
+f(n) =
+\begin{cases}
+ - \left( \dfrac{n-1}{2} \right) & \text{if n is odd} \\
+ \dfrac{n}{2} & \text{if n is even}
+\end{cases}
+\]
+\textbf{One-to-One: \\}
+Let $f(a) = f(b)$ where $a,b \in \N$. Then since, $f(a)= f(b)$ we know that either $f(a) = - \left( \dfrac{a-1}{2} \right)$ and $f(b) = - \left( \dfrac{b-1}{2} \right)$ or $f(a) = \dfrac{a}{2}$ and $f(b) = \dfrac{b}{2}$. In both the cases we get $a=b$ if $f(a) = f(b)$. thus the function is one-to-one.\\ \textbf{Onto: \\}
+Let $y \in \Z$. If $y > 0$ then we have $f(n) = y = \dfrac{n}{2} = y \rightarrow n = 2y$. Since $y > 0 \rightarrow 2y >0 \in \N$. Thus $2y = n \in \N$. If $y < 0$ then we have $ y = - \left( \dfrac{n-1}{2} \right)$. Solving for $n$ we get $n = -2y + 1$. Since $y <0$, $-2y > 0$ and thus $-2y + 1 > 0$. Thus $-2y+1 = n \in \N$. Hence, the function is onto.
+
+Thus the $f:\N \rightarrow \Z$ with \[
+f(n) =
+\begin{cases}
+ - \left( \dfrac{n-1}{2} \right) & \text{if n is odd} \\
+ \dfrac{n}{2} & \text{if n is even}
+\end{cases}
+\] is well defined and is a bijection. Thus the set of integers are countable.
+\end{proof}
+\end{document}
