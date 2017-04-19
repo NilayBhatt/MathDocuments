@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  19 FEB 2017 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  19 APR 2017 13:11
 entering extended mode
 **./DivisibilityofThree.tex
 (DivisibilityofThree.tex
@@ -153,9 +153,15 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks27
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read1
+)
 (C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\generic\epsf\epsf.tex
 This is `epsf.tex' v2.7.4 <14 February 2011>
-\epsffilein=\read1
+\epsffilein=\read2
 \epsfframemargin=\dimen119
 \epsfframethickness=\dimen120
 \epsfrsize=\dimen121
@@ -194,12 +200,12 @@ LaTeX Font Info:    ... okay on input line 22.
 \scratchbox=\box28
 \nofMPsegments=\count101
 \nofMParguments=\count102
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count103
 \MPscratchDim=\dimen129
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks31
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -260,12 +266,12 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 43.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (25.53975pt too wide) in paragraph at lines 53--53
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
@@ -274,13 +280,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--64
 {C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (DivisibilityofThree.aux) ) 
 Here is how much of TeX's memory you used:
- 2586 strings out of 493333
- 33889 string characters out of 3139194
- 103743 words of memory out of 3000000
- 6071 multiletter control sequences out of 15000+200000
+ 2614 strings out of 493333
+ 34408 string characters out of 3139194
+ 102374 words of memory out of 3000000
+ 6096 multiletter control sequences out of 15000+200000
  9257 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,26p,301b,172s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,26p,301b,178s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pf
@@ -288,7 +294,7 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on DivisibilityofThree.pdf (1 page, 73755 bytes).
+Output written on DivisibilityofThree.pdf (1 page, 75901 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

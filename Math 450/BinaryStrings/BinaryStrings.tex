@@ -30,6 +30,23 @@
 \end{center}
 	Prove that the set of all infinite binary strings are uncountable.
 \begin{proof}
-	Let us proceed by contradiction. Let $A$ be the set that represents the set of all possible infinite binary strings. Then we assume that $A$ is countable, $i.e$ $|A| = | \N |$ then we can 
+	Let us proceed by contradiction. Let $A$ be the set that represents the set of all possible infinite binary strings. Then we assume that $A$ is countable, $i.e$ $|A| = | \N |$ then we can say that there is a bijection $f: \N \rightarrow A$. Since $A$ is countable we can list the elements of $A$ which are mapped from $\N$ through $f$.
+	\begin{align*}
+	f(1) &= a_{11} a_{12}a_{13}a_{14}... \\
+	f(2) &= a_{21}a_{22}a_{23}a_{24}... \\
+	f(3) &= a_{31}a_{32}a_{33}a_{34}... \\
+	....\\
+	....\\
+	.... 		
+	\end{align*}
+	where $a_{ij}$ is the $j^{th}$ digit of $f(i)$ where $i,j \in \N$. Since $f$ is a bijection, $f$ is onto. Thus for all $a \in A$ there exits an $x \in \N$. Let us define digit $d_i$ as
+	 \[
+d_i =
+\begin{cases}
+ 0 & \text{if } a_{ii} = 1 \\
+ 1 & \text{if } a_{ii} \neq 1
+\end{cases}
+\] 
+Thus the infinite binary string $d$ whose $i^{th}$ digit is $d_i$ is different from all $f(i)$. By our assumption $d \in A$, but there is no pre-image in $\N$ such that $f(i) = d$ for any $i$. Thus there is contradiction. Thus the set of all infinite binary is not countable. 
 \end{proof}
 \end{document}
