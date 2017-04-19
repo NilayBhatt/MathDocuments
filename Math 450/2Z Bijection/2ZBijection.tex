@@ -1,5 +1,5 @@
-\documentclass[12pt, fullpage]{article}
-\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim}
+\documentclass[14pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim, extsizes}
 
 \newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
 \pagestyle{empty}
@@ -40,9 +40,9 @@
 	\begin{equation}
 	x_1 = x_1 
 	\end{equation}
-	This  means that if $f(x_1) = f(x_2)$ then, $x_1 = x_1$ thus $f$ is one to one.
+	This  means that if $f(x_1) = f(x_2)$ then, $x_1 = x_1$ thus $f$ is one-to-one.
 
-	\textit{Onto:} Let $x \in \Z$ and $y \in 2\Z$ such that, $x = \dfrac{y+6}{2}$. \\
+	\textit{Onto:} Let $y \in 2\Z$ such that, $x = \dfrac{y+6}{2}$. We will show that $x \in \Z$ \\
 	\begin{equation}			
 		\begin{split}
 			f(x) &= 2x - 6 \\ 
@@ -51,7 +51,7 @@
 			f(x) &= y			
 		\end{split}
 	\end{equation}
-	This  means that for every $y \in 2\Z$ there exists an $x \in \Z$ .
-	Thus $f$ is a bijecction.
+	Also, since $y \in 2\Z$, and 6 is even we know that $y-6 \in 2\Z$. Furthermore, $\frac{y-6}{2}$ can be even or odd, but more importantly it will be an integer. Thus, $x \in \Z$.
+	This  means that for every $y \in 2\Z$ there exists an $x \in \Z$ and making $f$ onto. Thus $f$ is bijective.
 \end{proof}
 \end{document}
