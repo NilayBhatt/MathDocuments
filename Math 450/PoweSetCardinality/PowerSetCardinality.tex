@@ -1,0 +1,35 @@
+\documentclass[14pt, fullpage]{article}
+\usepackage{amssymb,latexsym,amsmath,amscd,epsfig,amsthm,graphicx,verbatim, extsizes}
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\pagestyle{empty}
+
+\input epsf
+\newdimen\epsfxsize
+
+\parindent=0pt
+%\setlength{\evensidemargin}{-2.0cm}
+%\setlength{\oddsidemargin}{1.5cm}
+\setlength{\topmargin}{-1.5cm}
+%\setlength{\baselineskip}{20pt}
+%\setlength{\textwidth}{19cm}
+%\setlength{\textheight}{23cm}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\un}{\underline}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+
+
+\begin{document}
+\begin{center}
+		
+{\bf MATH 450 Seminar in Proof}
+ \\
+\end{center}
+	Prove that $f:A \rightarrow P(A)$ is not onto. Where $P(A)$ is the power set of $A$. Hint: consider the set $\{a \in A: a \notin f(a)\}$
+\begin{proof}
+	Let us proceed by contradiction. Let $f$ be onto. Then $f[A] = P(A)$. Let $B = \{a \in A: a \notin f(a)\}$. Thus $B \subset A$ and also $B \in P(A)$. Let $a$ be a particular element in $A$. If $a \in B$ then $B \notin f(a)$ and if $a \in f(a)$ then $a \notin B$. This creates a contradiction as from our assumption since $f$ is onto, $B \in f[A]$ but $B \notin f[A]$. So $f[A] \neq P(A)$. Thus $f$ is not onto.
+\end{proof}
+\end{document}
