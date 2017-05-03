@@ -35,8 +35,8 @@
 	\textbf{Base Case:} Let $A$ be a set with 0 elements. Then the $P(A) = \{ \emptyset \}$. Thus $|P(A)| = 1 = 2^0$.\\
 	\textbf{Inductive Hypothesis:} Assume if $|A| = n$ then $|P(A)| = 2^n$ is true.
 	\textbf{Inductive Step:}
-	\\ We will prove that if $|A| = n+1$ then, $|P(A)| = 2^{n+1}$. Now, let $A$ be a set such that $|A| = n+1$. Let $B = A - \{a\}$ where $a \in A$. Then $|B| = n$. Thus $|P(B)| = 2^n$ from our hypothesis.
+	\\ We will prove that if $|A| = n+1$ then $|P(A)| = 2^{n+1}$. Now, let $A$ be a set such that $|A| = n+1$. Let $B = A - \{a\}$ where $a \in A$. Then $|B| = n$. Thus $|P(B)| = 2^n$ from our hypothesis.
 	
-	 Also we can split the subsets of $A$ into two parts, namely subsets that contain $a$ and one that does not $i.e$ $P(B)$. Note that $P(B)$ does not have any sets in it that contains $a$. Let $B_1, B_2, B_3,...,B_{2^n}$ be the elements of $P(B)$. Then, $B_1 \cup \{a\} \in P(A)$, $B_2 \cup \{a\} \in P(A)$, $B_3 \cup \{a\} \in P(A)$, ..., $B_{2^n} \cup \{a\} \in P(A)$ are the subsets of $A$ that contain the element $a$. Since the union of each $B_i$ and $a$ produces $2^n$ subsets and $|P(B)| =2^n$, then $|P(A)| = 2^n + 2^n = 2^n(1+1) = 2^{n+1}$. 
+	 Also we can split the subsets of $A$ into two parts, namely subsets that contain $a$ and subsets that does not $i.e$ $P(B)$. Note that $P(B)$ does not have any sets in it that contains $a$. Let $B_1, B_2, B_3,...,B_{2^n}$ be the elements of $P(B)$. Then, $B_1 \cup \{a\} \in P(A)$, $B_2 \cup \{a\} \in P(A)$, $B_3 \cup \{a\} \in P(A)$, ..., $B_{2^n} \cup \{a\} \in P(A)$ are the subsets of $A$ that contain the element $a$. Since the union of each $B_i$ and $\{a\}$ produces $2^n$ subsets and $|P(B)| =2^n$, then $|P(A)| = 2^n + 2^n = 2^n(1+1) = 2^{n+1}$. 
 \end{proof}
 \end{document}

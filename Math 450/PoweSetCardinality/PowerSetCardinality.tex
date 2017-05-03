@@ -28,8 +28,8 @@
 {\bf MATH 450 Seminar in Proof}
  \\
 \end{center}
-	Prove that $f:A \rightarrow P(A)$ is not onto. Where $P(A)$ is the power set of $A$. Hint: consider the set $\{a \in A: a \notin f(a)\}$
+	Prove that $f:A \rightarrow P(A)$ is not onto (Where $P(A)$ is the power set of $A$). Hint: consider the set $\{a \in A: a \notin f(a)\}$
 \begin{proof}
-	Let us proceed by contradiction. Let $f$ be onto. Then $f[A] = P(A)$. Let $B = \{a \in A: a \notin f(a)\}$. Thus $B \subset A$ and also $B \in P(A)$. Let $a$ be a particular element in $A$. If $a \in B$ then $B \notin f(a)$ and if $a \in f(a)$ then $a \notin B$. This creates a contradiction as from our assumption since $f$ is onto, $B \in f[A]$ but $B \notin f[A]$. So $f[A] \neq P(A)$. Thus $f$ is not onto.
+	Let us proceed by contradiction. Let $f:A \rightarrow P(A)$ be onto. Then $f[A] = P(A)$. Let $B = \{a \in A: a \notin f(a)\}$. Thus $B \subset A$ and also $B \in f[A]$. Since $f$ is onto, we know that $B$ has a pre-image in $A$. Let $f(a) = B$, where $a$ be an element in $A$. There are two possibilities $a \in B$ or $a \notin B$. If $a \in B$ then by definition $a \notin f(a)$ but then since $f(a) = B$ there is a contradiction. If $a \notin B$ then by definition $a \in f(a)$ but then since $f(a) = B$ then again there is a contradiction. Thus $f$ is not onto.
 \end{proof}
 \end{document}

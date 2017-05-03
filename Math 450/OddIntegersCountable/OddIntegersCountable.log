@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  17 APR 2017 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  1 MAY 2017 12:57
 entering extended mode
 **./OddIntegersCountable.tex
 (OddIntegersCountable.tex
@@ -256,8 +256,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -277,11 +280,11 @@ sCountable.aux) )
 Here is how much of TeX's memory you used:
  2634 strings out of 493333
  36600 string characters out of 3139194
- 97642 words of memory out of 3000000
+ 95642 words of memory out of 3000000
  6117 multiletter control sequences out of 15000+200000
  7211 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,9n,26p,440b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,4n,26p,261b,127s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
@@ -289,7 +292,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on OddIntegersCountable.pdf (1 page, 69676 bytes).
+Output written on OddIntegersCountable.pdf (1 page, 69002 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

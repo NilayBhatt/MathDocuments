@@ -31,23 +31,22 @@
 	Prove that the set of integers are countable.
 \begin{proof}
 	 We know that a set $X$ is countable if there exists a bijection in $f: \N \rightarrow X$.
-	 Let $f: \N \rightarrow \Z$ b defined as \[
+	 Let $f: \N \rightarrow \Z$ be defined as \[
 f(n) =
 \begin{cases}
- - \left( \dfrac{n-1}{2} \right) & \text{if n is odd} \\
- \dfrac{n}{2} & \text{if n is even}
+ - \left( \dfrac{n-1}{2} \right) & \text{if } n \text{ is odd} \\
+ \dfrac{n}{2} & \text{if } n \text{ is even}
 \end{cases}
 \]
-We know that $f(n)$ is a well defined function from the class lecture. So we will show that it is a bijection. \\ 
+We know that $f(n)$ has a valid co-domain. We will now show that it is a bijection. \\ 
 \textbf{One-to-One: \\}
 Let $f(a) = f(b)$ where $a,b \in \N$. Therefore, either $f(a) = - \left( \dfrac{a-1}{2} \right)$ and $f(b) = - \left( \dfrac{b-1}{2} \right)$ or $f(a) = \dfrac{a}{2}$ and $f(b) = \dfrac{b}{2}$. 
-Note that if we have $f(b) = - \left( \dfrac{b-1}{2} \right)$ and $f(a) = \dfrac{a}{2}$ with out loss of generality, we will have $b = 1 - a$ which makes $b \leq 0$ implies $b \notin \N$. Therefore both $f(a)$ and $f(b)$ will have the same structure.
+Note that if we have $f(b) = - \left( \dfrac{b-1}{2} \right)$ and $f(a) = \dfrac{a}{2}$ with out loss of generality, we will have $b = 1 - a$, we know that $a \geq 1$ (because $a \in \N$) which makes $b \leq 0$ implies $b \notin \N$. Therefore both $f(a)$ and $f(b)$ will have the same structure.
 
 
 In both the former cases we get $a=b$ if $f(a) = f(b)$. thus the function is one-to-one.\\
 \textbf{Onto: \\}
-Let $y \in \Z$. If $y > 0$ then we have $f(2y) = \dfrac{2y}{2} = y$. Since $y > 0$ implies $2y >0$ and $2y \in \N$. 
- Thus $2y = n \in \N$. If $y < 0$ then we have $ f(-2y + 1) = - \left( \dfrac{-2y + 1-1}{2} \right) = y$. Since $y <0$, $-2y > 0$ and thus $-2y + 1 > 0$. Thus $-2y+1 \in \N$. Hence, the function is onto.
+Let $y \in \Z$. If $y > 0$ then we have $f(2y) = \dfrac{2y}{2} = y$. Since $y > 0$, then we know that $2y >0$ and $2y \in \N$. If $y < 0$ then we have $ f(-2y + 1) = - \left( \dfrac{-2y + 1-1}{2} \right) = y$. Since $y <0$, which implies that $-2y > 0$ and thus $-2y + 1 > 0$. Thus $-2y+1 \in \N$. Hence, the function is onto.
 
 Thus the $f:\N \rightarrow \Z$ with \[
 f(n) =
