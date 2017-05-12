@@ -1,5 +1,5 @@
 \documentclass[17pt]{article}
-\usepackage{amssymb,amsmath,latexsym, extsizes, amsthm}
+\usepackage{amssymb,amsmath,latexsym, extsizes, amsthm, verbatim, inputenc}
 
 % Page length commands go here in the preamble
 \setlength{\oddsidemargin}{-0.25in} % Left margin of 1 in + 0 in = 1 in
@@ -9,6 +9,8 @@
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
 
 \renewcommand{\baselinestretch}{1.5} % 1.5 denotes double spacing. Changing it will change the spacing
 
@@ -23,87 +25,112 @@
 \begin{document}
 \title{Euler Circuit on Directed Graphs}
 \author{Nilay Bhatt \\ Math 450: Seminar in Proof \\ Spring 2017}
-\date{\today}
+\date{Dr. Rachel Schwell \\ Central Connecticut State University}
 \maketitle
-\abstract{Previously in the semester we looked at the necessary and sufficient conditions on an undirected graph for it to have an Euler Circuit. For this final project we looked at how can we expand this idea on directed graphs (digraphs). We explored the new conditions that are necessary on a digraph for it to have an Euler Circuit. Lastly, we explored what are the implications and uses of Euler Circuit o a digraph.}
 
+\newpage 
+\tableofcontents
+
+\newpage
+ \vspace*{\fill}
+\abstract{Previously in the semester we looked at the necessary and sufficient conditions on an undirected graph for it to have an Euler Circuit. For this final project we looked at how can we expand this idea on directed graphs (digraphs). We explored the new conditions that are necessary on a digraph for it to have an Euler Circuit. Lastly, we explored what are the implications and uses of Euler Circuit on a digraph.}
+ \vspace*{\fill}
 \newpage
 
 \section{Introduction}
-Graph theory is a one of the older fields in Math. \textbf{Leonhard Euler} is 
 
-\textbf{Definition 1.1: \textit{Graph: }}A \textbf{graph} $G$ consists of a non-empty finite set $V(G)$ of elements called \textbf{vertices},
-and a finite \lq family\rq $ E(G)$ of unordered pairs of (not necessarily distinct) elements
-of $V(G)$ called \textbf{edges}; the use of the word 'family' permits the existence of multiple edges. We call $V(G)$ the vertex set and $E(G)$ the edge family of $G$. An edge $e_{vw}$ is said to join the vertices $v$ and $w$, and is usually abbreviated to $vw$. \\
+	Graph theory, branch of mathematics is concerned with networks of points connected by lines. The subject of graph theory had its beginnings in recreational math problems, but it has grown into a significant area of mathematical research with applications in chemistry, operations research, social sciences, and computer science.\\The history of graph theory may be specifically traced to 1735, when the Swiss mathematician Leonhard Euler solved the Konigsberg bridge problem. The Konigsberg bridge problem was an old puzzle concerning the possibility of finding a path over every one of seven bridges that span a forked river flowing past an island but without crossing any bridge twice. Euler argued that no such path exists; his proof involved only references to the physical arrangement of the bridges, but essentially he proved the first theorem in graph theory. Translated into the terminology of modern graph theory (introduced much later), the theorem could be restated as follows: If there is a path along edges of a multigraph that traverses each edge once and only once, then there exist at most two vertices of odd degree; furthermore, if the path begins and ends at the same vertex, then no vertices will have odd degree.\\ In this project we observed how one can find a circuit given a directed graph, such that we only use the edge between nodes only once and end at the node where we started at. This has a lot of uses in day to day life. Some of the famous problems that have uses are (which includes other concepts like shortest path, cheapest path,... etc) traveling salesmen problem (NP-hard), the Knight's tour, the postman problem and many more! 
 
-\textbf{Definition 1.2: \textit{Simple Graph:}} A \textbf{simple graph} is an \textbf{undirected}, \textbf{unweighted} graph such that there is at most 1 edge between any two vertices, and no loops, where a loop is an edge from a vertex $x$ to itself.\\ \textbf{Note:} The union of two graphs $G = (V_1,E_2),H = (V_2,E_2)$ as $G\cup H = (V_1\cup V_2, E_1 \cup E_2)$. If we have the union of a graph and a single vertex $v$ or edge $e$ we may write $G\cup v$ or $G\cup e$.\newline
+\section{Defintions}
+\begin{definition} \textbf{Graph: }A \textbf{graph} $G$ consists of a non-empty finite set $V(G)$ of elements called \textbf{vertices},
+and a finite `family'  $ E(G)$ of unordered pairs of (not necessarily distinct) elements
+of $V(G)$ called \textbf{edges}; the use of the word 'family' permits the existence of multiple edges. We call $V(G)$ the vertex set and $E(G)$ the edge family of $G$. An edge $e_{vw}$ is said to join the vertices $v$ and $w$, and is usually abbreviated to $vw$.
+\end{definition}
+\textbf{Note:}	The vertices in $G$ are referred to as $V(G)$ and the edges on $G$ are referred to $E(G)$. This is independent of the way we define a graph.
 
-\textbf{Note:}	The vertices in $G$ are referred to as $V(G)$ and the edges on $G$ are referred to $E(G)$. This is independent of the way we define a graph.\\
 
-\textbf{Definition 1.3: \textit{Adjacency:}}: We say that two vertices $v$ and $w$ of a graph $G$ are \textbf{adjacent} if there is an edge $vw$ joining
-them, and the vertices $v$ and $w$ are then \textbf{incident} with such an edge. Similarly, two
-distinct edges $e$ and $f$ are \textbf{adjacent} if they have a vertex in common.\\
-
-\textbf{Note:} A graph $G$ is \textbf{complete} if any two vertices in $G$ are adjacent.\\
-
-\textbf{Definition 1.4: \textit{Degree of a Vertex:}}: The degree of a vertex $v$ of $G$ is the number of edges connected with $v$, and is written
+\begin{definition}\textbf{Degree of a Vertex}: The degree of a vertex $v$ of $G$ is the number of edges connected with $v$, and is written
 $deg(v)$; in calculating the degree of $v$, we usually make the convention that a loop at $v$
-contributes 2 (rather than 1) to the degree of $v$. A vertex of degree 0 is an \textbf{isolated} vertex and a vertex of degree 1 is an \textbf{end-vertex}.\\
+contributes 2 (rather than 1) to the degree of $v$. A vertex of degree 0 is an \textbf{isolated} vertex and a vertex of degree 1 is an \textbf{end-vertex}.
+\end{definition}
+\textbf{Note:} A graph is \textit{\textbf{connected}} if it cannot be expressed as the union of two disjoint graphs, and \textbf{disconnected} otherwise.
 
-\textbf{Note:} A graph is \textit{\textbf{connected}} if it cannot be expressed as the union of two disjoint graphs, and \textbf{disconnected} otherwise. \\
-
-\textbf{Definition 1.5: \textit{Subgraph:}}A \textbf{subgraph} $H$ of a graph $G$ is a graph, such that $V(H) \subseteq V(G)$ and $E(H) \subseteq E(G)$.\\
-
+\begin{definition}\textbf{Subgraph:}A \textbf{subgraph} $H$ of a graph $G$ is a graph, such that $V(H) \subseteq V(G)$ and $E(H) \subseteq E(G)$.
+\end{definition}
 \textbf{Note:} if $G=(V,E)$ be a graph then $G \cup G = G$ where we preserve the cardinality and mapping (which vertex is connected to which edge) in $G$ for $V(G)$ and $E(G)$.
 
-\textbf{Definition 1.6: \textit{Walk}}: Given a graph $G$, a \textbf{walk} in $G$ is a finite sequence of distinct edges of the form $v_0v_1$, $v_1v_2$,...,$v_{m-1}v_m$, also denoted by $v_0 \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_m$, in which any two consecutive edges are adjacent.  If $v_0 = v_m$ then we call the walk a \textbf{cycle}.\\
+\begin{definition}
+\textbf{Directed edge: }A directed edge is a $e_{vw}$ connects $v$ and $w$ if it joins vertex $v$ to vertex $w$ and where $e_{vw}$ is the outgoing edge of $v$ and is an incoming edge for $w$.
+\end{definition}
+
+\begin{definition}\textbf{In degree of a vertex}: The \textbf{in degree} of a vertex is the number if edges that are incoming to the vertex. We will denote the in degree of a vertex $v$ as \textbf{inDegree(v)}.
+\end{definition}
+
+\begin{definition}\textbf{Out degree of a vertex}: The \textbf{out degree} of a vertex is the number if edges that are outgoing to the vertex. We will denote the out degree of a vertex $v$ as \textbf{outDegree(v)}.
+\end{definition}
+
+\begin{definition}\textbf{Adjacency:}: We say that two vertices $v$ and $w$ of a graph $G$ are \textbf{adjacent} if there is an edge $vw$ joining
+them, where the $vw$ is the incoming edge for $w$ and is called the outgoing edge for $v$, and also the vertices $v$ and $w$ are then \textbf{incident} with such an edge $vw$. Similarly, two
+distinct edges $e$ and $f$ are \textbf{adjacent} if they have a vertex in common.
+\end{definition}
+\textbf{Note:} A graph $G$ is \textbf{complete} if any two vertices in $G$ are adjacent.
+
+\begin{definition}\textbf{Walk}: Given a graph $G$, a \textbf{walk} in $G$ is a finite sequence of distinct edges of the form $v_0v_1$, $v_1v_2$,...,$v_{m-1}v_m$, also denoted by $v_0 \rightarrow v_1 \rightarrow v_2 \rightarrow ....\rightarrow v_m$, in which any two consecutive edges are adjacent.  If $v_0 = v_m$ then we call the walk a \textbf{cycle}.
+\end{definition}
  \textbf{Note:} As a convention we will denote any cycle or path $P$ as a sequenced $n$-tuple of the vertices $P$ visits in a given order. For example if $P$ is a path that visits vertices $a,b,c$ in the respective order we say $P = (a,b,c)$. If $P$ is a cycle, we simply acknowledge that $P$ also contains the edge from the last vertex in the tuple back to the first.\newline
 
-\textbf{Definition 1.7: \textit{Euler Path: }}An \textbf{Euler Path} on a graph $G$ is a special walk that uses each edge exactly once.\\
+\begin{definition}\textbf{Euler Path: }An \textbf{Euler Path} on a graph $G$ is a special walk that uses each edge exactly once.
+\end{definition}
 
-\textbf{Definition 1.8: \textit{Euler Circuit/Cycle: }}An \textbf{Euler circuit} on a graph $G$ is an Euler Path with a cycle.\\
+\begin{definition}\textbf{Euler Circuit/Cycle: }An \textbf{Euler circuit} on a graph $G$ is an Euler Path with a cycle.
+\end{definition}
 
-\textbf{Definition 1.9: \textit{Traversing: }}The process of passing through each vertex of a  walk or cycle in a graph $G$ using the edges joining them in a walk or a path or a cycle.\\
+\begin{definition} \textbf{Traversing: }The process of passing through each vertex of a  walk or cycle in a graph $G$ using the edges joining them in a walk or a path or a cycle.
+\end{definition}
 
-%\begin{comment}
-\textbf{Lemma: \textit{Nilay's Lemma (Not really):}} If a connected graph has every vertex of degree of at least two, then $G$ has a \textit{cycle}.
+\begin{definition} \textbf{Directed Graph:} A \textbf{directed graph} or \textbf{digraph} $G$ consists of a non-empty finite set $V(G)$ of elements called \textbf{vertices},
+and a finite `family'  $ E(G)$ of ordered pairs of (distinct) elements
+of $V(G)$ called \textbf{edges}; the use of the word `family' permits the existence of multiple edges. We call $V(G)$ the vertex set and $E(G)$ the edge family of $G$. An edge $e_{vw}$ is said to connect the vertex $v$ to another vertex $w$, and is usually abbreviated to $vw$.\\ Note that $e_{vw} \neq e_{wv}$ and this is where the directed property of a graph is important. 
+\end{definition}
+
+\begin{definition}\textbf{Directed cycle (dicycle)}: A walk constructed on a digraph starting at a vertex $v_0$ and traverses through the directed edges and ends at $v_0$ is called a dicycle. We may denote a dicycle as $\vec{C}$ or $C_d$ where $C$ is any alphabet.
+\end{definition}
+\newpage
+\section{Proofs}
+\begin{lemma} If a connected digraph has every vertex of degree of at least two and where inDegree($v$) = outDegree($v$), for all vertex $v \in V(G)$, then $G$ has a \textit{dicycle}.
 \begin{proof}
-Let $G$ be a connected graph. Let $v_0$ be a vertex in $G$ such that $v_0$ has at least degree two. Let us construct a walk $v_0 \rightarrow v_1 \rightarrow v_2 \rightarrow ....$ such that $v_1$ be any adjacent vertex to $v_0$, and for each $v_i$ where $i > 1$, we choose $v_{i+1}$ to be any adjacent vertex to $v_i$, except $v_{i-1}$(already chosen). We know that such a vertex exists because of our hypothesis that every vertex is of at least degree two. Since $G$ is finite graph, the number of vertices it has is finite. Thus, while constructing our walk we will eventually choose a vertex $v_k$ which has already been chosen and included in the walk. If $v_k$ is the first such vertex that we encounter, then the path that was created from the first occurrence of $v_k$ to the second one is a cycle from $v_k$ to $v_k$.
+Let $G$ be a connected digraph. Let $v_0$ be a vertex in $G$ by our assumption $v_0$ has at least have a degree of two and inDegree($v_0$) = outDegree($v_0$). Let us construct a walk $v_0 \rightarrow v_1 \rightarrow v_2 \rightarrow ....$ such that $v_1$ be any adjacent vertex to $v_0$ and where the outgoing edge of $v_0$ is the incoming edge of $v_1$. For each $v_i$ where $i > 1$, we choose $v_{i+1}$ to be any adjacent vertex to $v_i$, except $v_{i-1}$(already chosen). We know that such a vertex exists because of our hypothesis that every vertex is of at least degree two and we know that we can find the next edge because both in degree and out degree of each vertex is same. Since $G$ is finite digraph, the number of vertices it has is finite. Thus, while constructing our walk we will eventually choose a vertex $v_k$ which has already been chosen and included in the walk. If $v_k$ is the first such vertex that we encounter, then the path that was created from the first occurrence of $v_k$ to the second one is a dicycle from $v_k$ to $v_k$.
 \end{proof}
+\end{lemma}
 
-
-
-%\textbf{\\Results to be proven: }
-
-%\begin{enumerate}
-	\textit{\textbf{(EULER (1736), HIERHOLZER (1873))}} A connected graph $G$ has an Euler Circuit if and only if the degree of each vertex of $G$ is even.
+\newpage
+\begin{theorem} A connected digraph $G$ has an Euler Circuit if and only if the degree of each vertex of $G$ is even and $inDegree = outDegree$ for every vertex.
 \begin{proof}
- 	$\Longrightarrow$ Let $G$ be a connected graph which has Euler circuit $C$. Whenever $C$ passes through a vertex in $V(G)$ through an edge in $E(G)$, there is a contribution of 2 edges which are adjacent to the vertex, towards the degree of that vertex. From our hypothesis we know that we do not repeat the same edge twice, each vertex must have even degree. \\
- 	
- 	$\Longleftarrow$ Let us proceed by induction. In a most basic connected graph $G$ of no edges and one vertex, the proposition is vacuously true. If a connected graph $G$ has one vertex $v \in V(G)$, then the number of edges in $E(G) = 1$, thus we start and end our Euler Circuit at $v$ (loop, contribution of 2 towards the degree). \\
- 	
- 	Now, let there be only two vertices in a connected graph $G$ and each vertex is of degree two (making them even degree). Then since $G$ is connected, there are no isolated vertices in $G$. Furthermore, those two vertices share the two edges between them. Therefore, if we construct a walk at either of the vertices in $V(G)$ we will end at the same vertex where we started, and not repeating the edge that we passed through. Since we are passing through each edge only once, we now have an Euler circuit in $G$.\\ 
- 	
- 	Now, for our strong induction hypothesis, we say, if $G$ is a graph where $\vert E(G)\vert \leq k, k \in \Z$, and all vertices in $G$ have an even degree then there exists an Euler Circuit in $G$.\\
- 	
- 	 Now, let $G$ be a connected graph with $k+1$ edges, where each vertex in $G$ is of even degree. From the lemma we know that there exists a cycle in $G$. If that cycle includes all the edges in $G$ then we are done. Let's say it does not. Then there exists a cycle $C$ in $G$ which does not include all the vertices of $G$. 
+$\Longrightarrow$ Let $G$ be a connected digraph which has Euler circuit $C_d$. Whenever $C_d$ passes through a vertex in $V(G)$ through an edge in $E(G)$, there is a contribution of 2 edges which are adjacent to the vertex, towards the degree of that vertex. Also note that, every time $C_d$ passes through a vertex $v \in V(G)$, it enters $v$ by contributing towards $v's$ in degree and leaves $v$ by contributing towards its out degree, thus making inDegree($v$) = outDegree($v$). From our hypothesis we know that we do not repeat the same edge twice, hence each vertex must have an even degree such that for all vertices $v \in V(G)$, inDegree($v$) = outDegree($v$). \\\\
+ 	$\Longleftarrow$ Let us proceed by induction. In a most basic connected digraph $G$ of no edges and one vertex, the proposition is vacuously true. If a connected digraph $G$ has one vertex $v \in V(G)$, and the number of edges in $E(G)$ is equal to 1, then we start and end our Euler Circuit at $v$ by taking the one and only edge. This is true because there is a loop which has a contribution of 2 towards the degree of $v$ and the same edge is the out going and the incoming edge for $v$.\\
+ 	Now, let there be only two vertices in a connected digraph $G$ and each vertex is of degree two (making them even degree). Then since $G$ is connected, there are no isolated vertices in $G$. Furthermore, those two vertices share the two edges between them. This means that if $v,w$ are the vertices of $G$ and let $vw$ and $wv$ be the edges in $G$, we know that $vw$ is the incoming edge of $w$ and outgoing edge of $v$ and similarly $wv$ is the incoming edge of $v$ and outgoing edge of $w$. Thus, inDegree($v$) = outDegree($v$) and inDegree($w$) = outDegree($w$). Therefore, if we construct a walk at either of the vertices in $V(G)$ we will end at the same vertex where we started, and not repeating the edge that we passed through. Since we are passing through each edge only once, we now have an Euler circuit in $G$.\\\\ 	
+ 	Now, for our strong induction hypothesis, we say, if $G$ is a digraph where $\vert E(G)\vert \leq k,$ $k \in \Z$, and all vertices in $G$ have an even degree and inDegree of each vertex is same as the vertex's outDegree then there exists an Euler Circuit in $G$.\\\\
+ 	Now, let $G$ be a connected digraph with $k+1$ edges, where each vertex in $G$ is of even degree and for each vertex, its inDegree is equal to its outDegree. From the lemma we know that there exists a dicycle in $G$. If that cycle includes all the edges in $G$ then we are done. Let's say it does not. Then there exists a dicycle $C_d$ in $G$ which does not include all the vertices of $G$. 
  	 
- 	 Now, let us remove all the edges from $G$ that are in $C$ and obtain newly made sub-graph $H = (V(G), E(G)-E(C))$, made by the remaining edges in $G$; by our hypothesis,all the vertices in $H$ still have an even degree. We know this because when we removed $E(C)$ from $E(G)$, we removed an even number of edges from each vertex from the cycle $C$ formed in $G$.\\
+ 	 Now, let us remove all the directed edges from $G$ that are in $C_d$ and obtain newly made sub-graph $H = (V(G), E(G)-E(C_d))$, made by the remaining edges in $G$; by our hypothesis,all the vertices in $H$ still have an even degree and inDegree of each vertex is same as its outDegree. We know this because when we removed $E(C_d)$ from $E(G)$, we removed an even number of edges from each vertex from the cycle $C_d$ formed in $G$. Also, when we removed even number of edges from each vertex, half of them were incoming edges to that vertex and half of them were outgoing from that vertex (which is in the cycle $C_d$).
  	 
- 	  Suppose $H$ is still connected, $i.e.$ there are no isolated vertices in $H$ then $H$ is a graph with fewer than $k$ edges, and thus $H$ has a Euler Circuit from our hypothesis because $\vert E(H) \vert < k$. Also, since $G$ is connected, there must be a common vertex $m \in V(C) \cap V(H)$. If there weren't any common vertex in $C$ and $H$ then, $C \sqcup H$ will form a disjoint union, thus making $G$ disconnected. So, now we have an Euler circuit in $G$, where we start from any vertex $v \in V(C)$ and while traversing $C$, when we reach $m$, we traverse the Euler circuit in $H$, starting and ending at $m \in V(C) \cap V(H)$ and ending our cycle at $v$, thus traversing along all the edges in $E(G) = E(C) \cup E(H)$ once and all the vertex in $V(G) = V(C) \cup V(H)$.
+ 	  Suppose $H$ is still connected, $i.e.$ there are no isolated vertices in $H$ then $H$ is a digraph with fewer than $k$ edges, and thus $H$ has a Euler Circuit from our hypothesis because $\vert E(H) \vert < k$ and for each vertex in $H$ its inDegree = outDegree. Also, since $G$ is connected, there must be a common vertex $m \in V(C_d) \cap V(H)$. If there weren't any common vertex in $C_d$ and $H$ then, $C_d \sqcup H$ will form a disjoint union, thus making $G$ disconnected. So, now we have an Euler circuit in $G$, where we start from any vertex $v \in V(C_d)$ and while traversing $C_d$, when we reach $m$, we traverse the Euler circuit in $H$, starting and ending at $m \in V(C_d) \cap V(H)$ and ending our dicycle at $v$, thus traversing along all the edges in $E(G) = E(C_d) \cup E(H)$ once and all the vertex in $V(G) = V(C_d) \cup V(H)$.
  	 
- 	   When we removed $C$ from $G$, the other possibility was that we may have $H$ disconnected. Thus $H = H'_1 \sqcup H'_2 \sqcup H'_3 \sqcup ... \sqcup H'_i$. $H$ is formed from a disjoint union of even degree connected sub-graphs $H'_i$. Note that, for each such $H'_i$, $\exists v_i \in V(C) \cap V(H_i)$. Since $\vert E(H'_i) \vert < k$, from our hypothesis, each $H'_i$ has an Euler Circuit, made by some cycle $C'_i$.
+ 	   When we removed $C_d$ from $G$, the other possibility was that we may have $H$ disconnected. Thus $H = H'_1 \sqcup H'_2 \sqcup H'_3 \sqcup ... \sqcup H'_i$. $H$ is formed from a disjoint union of even degree connected sub-digraphs $H'_i$. Note that, for each such $H'_i$, $\exists v_i \in V(C_d) \cap V(H_i)$. Since $\vert E(H'_i) \vert < k$, from our hypothesis, each $H'_i$ has an Euler Circuit, made by some dicycle $C'_{d_i}$.
  	   
- 	   We can now build an Euler circuit for $G$. Pick an arbitrary vertex $a \in V(C) \subset V(G)$ from $C$. Traverse along $C$ starting from $a$ until we reach a vertex $v = V(C) \cap V(H'_i)$. Then, traverse along $H'_i$'s Euler circuit starting from $v$ made by  $C'_i$ in $H'_i$. 
+ 	   We can now build an Euler circuit for $G$. Pick an arbitrary vertex $a \in V(C_d) \subset V(G)$ from $C_d$. Traverse along $C_d$ starting from $a$ until we reach a vertex $v = V(C_d) \cap V(H'_i)$. Then, traverse along $H'_i$'s Euler circuit starting from $v$ made by  $C'_{d_i}$ in $H'_i$. 
  	   
- 	   Now we are back to $v$, and so we continue along $C$, and do the same for each such $v_i \in V(C) \cap V(H'_i)$ we encounter and after traversing each edge in $E(G) = E(C) \cup E(H'_1)\cup E(H'_2) \cup E(H'_3)\cup... \cup E(H'_i)$ exactly once and all the vertices in $V(G) = V(C) \cup V(H'_1)\cup V(H'_2) \cup V(H'_3) \cup... \cup V(H'_i)$, we obtain our desired Euler path in $G$ starting and ending at $a \in V(G)$. 	  
-\end{proof} 
-%\newpage
-%\item If there are exactly two vertices $a$ and $b$ of odd degree, there is an Euler path on %the graph from $a$ to $b$. (Existence Proof)
-%\end{enumerate}
-%\begin{proof}	
-%	Let $G$ be a graph with Euler circuit. Thus, we know that every vertex in $G$ has an even %degree from the theorem stated above. Now let us add one vertex say $b \notin V(G) $ and an %edge $e_{ba} \notin E(G)$ to a vertex $a \in V(G)$. Note that before adding the edge  from %%$e_{ba}$ to $a$, $a \in V(G)$ had an even degree. We start our path from $b$, and since it %has only one edge $e_{ba}$ connecting to $a$. We know that $a \in V(G)$ and since $G$ has a %Euler Circuit, we know that we can construct a cycle that starts and ends at $a \in G$. We %cannot use the edge $e_{ba}$ to go back to $b$ as we have already included in our path. %Therefore, the path will end at $a$. Thus, we know have a graph $G' = (V(G) + b, E(G) + %e_{ba})$, where $a$ and $b$ are two vertices in $G'$ that are of odd degree and an Euler %Path starting from $b$ and ending at $a$.
+ 	   Now we are back to $v$, and so we continue along $C_d$, and do the same for each such $v_i \in V(C_d) \cap V(H'_i)$ we encounter and after traversing each edge in $E(G) = E(C_d) \cup E(H'_1)\cup E(H'_2) \cup E(H'_3)\cup... \cup E(H'_i)$ exactly once and all the vertices in $V(G) = V(C_d) \cup V(H'_1)\cup V(H'_2) \cup V(H'_3) \cup... \cup V(H'_i)$, we obtain our desired Euler circuit in $G$ starting and ending at $a \in V(G)$.
 
-%\end{proof}
-%\end{comment}
+\end{proof}
+\end{theorem}
+\newpage
+\section{Consequences and Future Work}
+Looking at the proof and the digraphs formed from them, we were able to find some consequences of Euler Circuit in a digraph.
+
+\begin{corollary} If $G$ is a digraph and has an Euler Circuit, then any two vertices are connected. 
+\end{corollary}
+Meaning, if $v$ and $w$ are two such vertices then, there is always a directed path from $v$ to $w$ and a directed path from $w$ to $v$.\\
+We also looked at how to derive euler path on a digraph. We saw that the digraph will have two vertices with odd degree and the sum of their inDegree and outDegree those two vertices will be equal. Also, the Euler Path will start at the vertex of odd degree with more outgoing edges than incoming and end at the one with the less incoming edges. We were not able get around to prove the above results.\\
+We would like to see how an Euler Circuit can be formed with a weighted digraph by leaving the heaviest vertex and also be able to derive a proof for Euler Path on a digraph. Create computer algorithm which calculates and finds Euler Circuit/Path on digraphs and make it be publicly accessible for everyone.
 \end{document}

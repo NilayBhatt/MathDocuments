@@ -30,15 +30,15 @@
 \end{center}
 	Prove that the set of odd negative integers is countable.\\
 \begin{proof}
-	 We know that a set $X$ is countable if there exists a bijection in $f: \N \rightarrow X$. 
-	 Let $f:\N \rightarrow -2\Z - 1 $ such that $f(n) = 1-2n$ \\
-We first show that the function has a valid co-domain. For some $n \in \N$ we have $f(n) = 1- 2n$. We know that $n >0$ then $-2n < 0$ and is even. Thus, $1-2n$ is a negative odd integer. Now we will prove that it is bijective.
+	 We know that a set $X$ is countable if there exists a bijection in $f: \N \rightarrow X$. Let $X$ be the set of negative odd integers.
+	 Let $f:\N \rightarrow X $ such that $f(n) = 1-2n$. \\
+We first show that the function has a valid co-domain. For every $n \in \N$ we have $f(n) = 1- 2n$. We know that $n >0$ then $-2n < 0$ and is even. Thus, $1-2n$ is a negative odd integer. Now we will prove that $f(n)$ is bijective.
 
 \textbf{One-to-One: \\}
 Let $f(a) = f(b)$ where $a,b \in \N$. Then since, $f(a)= f(b)$ we know that $1-2a = 1-2b$. Thus $a=b$. Therefore $f$ is one-to-one.\\
 \textbf{Onto: \\}
-Let $y \in -2\Z -1$ then $y < 0$. Observe that $f\left(\dfrac{1-y}{2}\right) = 1-2\left(\dfrac{1-y}{2}\right)= y$. Since $y \leq -1$ then $\dfrac{1-y}{2} \geq 1$. Thus $\dfrac{1-y}{2} \in \N$. Hence, the function is onto.
+Let $y \in -2\Z -1$ then $y < 0$. Observe that $f\left(\dfrac{1-y}{2}\right) = 1-2\left(\dfrac{1-y}{2}\right)= y$. Since $y \leq -1$ then we know that $-y \geq 1$, which means $ 1- y \geq 2$ and thus, $\dfrac{1-y}{2} \geq 1$. Also, since $y$ is a negative odd integer, $1-y$ is a positive even integer and thus $\dfrac{1-y}{2} \in \N$. Hence, the function is onto.
 
-Thus $f:\N \rightarrow 2\Z - 1$ with $f(n) = 1-2n$ is bijective. Thus the set of odd negative integers are countable.
+Thus $f:\N \rightarrow X$ with $f(n) = 1-2n$ is bijective. Thus the set of odd negative integers are countable.
 \end{proof}
 \end{document}

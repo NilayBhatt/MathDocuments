@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Defintions}{5}
+\contentsline {section}{\numberline {3}Proofs}{8}
+\contentsline {section}{\numberline {4}Consequences and Future Work}{12}

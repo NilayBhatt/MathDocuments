@@ -46,40 +46,25 @@
 \item
 	$(A * B) \bmod C = ((A \bmod C) * (B \bmod C)) \bmod C$
 \end{enumerate}
-where $A,B,C$ are integers.
+where $A,B,C$ are integers and $C > 0$.
 \begin{proof}
  Let $\beta$ be an integer. We can then write $\beta$ as:
 \begin{align*}
 \beta &= \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i
 \end{align*}
 where $\beta_i$ are digits of $\beta$.\\
-$\Rightarrow$ Let $\beta$ be divisible by 3. Then $\beta\bmod 3 = 0$, thus we can write the expansion as: 
+If we divide $\beta$ by 3 then, we can write the expansion as: 
 \begin{align*}
 \beta\bmod 3 &= ( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \bmod 3\\
-0 &= ( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \bmod 3  \\
+\beta\bmod 3 &= ( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \bmod 3  \\
 &= [ (\beta_0*10^0) \bmod 3 + (\beta_1 * 10^1) \bmod 3 + (\beta_2 * 10^2) \bmod 3 + ... + (\beta_i * 10^i) \bmod 3 ]\bmod 3 \\
 &= [ (\beta_0\bmod 3*10^0\bmod3) \bmod 3 + (\beta_1\bmod 3 * 10^1\bmod 3) \bmod 3 \\& +(\beta_2\bmod 3 * 10^2\bmod 3) \bmod 3 + ... + (\beta_i\bmod 3 * 10^i\bmod 3) \bmod 3 ]\bmod 3 \\
 &=[(\beta_0\bmod 3*1) \bmod 3 + (\beta_1\bmod 3 * 1) \bmod 3 +(\beta_2\bmod 3 * 1)\bmod 3 \\& + ... + (\beta_i\bmod 3 * 1) \bmod 3 ]\bmod 3\\
 &= [ \beta_0 \bmod 3 + \beta_1\bmod 3+\beta_2\bmod 3 + ... + \beta_i\bmod 3 ]\bmod 3\\
-0 &= [ \beta_0+ \beta_1 + \beta_2 + ... + \beta_i ]\bmod 3
+\beta\bmod 3 &= [ \beta_0+ \beta_1 + \beta_2 + ... + \beta_i ]\bmod 3
 \end{align*}
-Thus if a number is divisible by three then the sum if its digits is also divisible by three.\\
-$\Leftarrow$ Let $\beta$ be a number such that the sum of its digits $\beta_0+ \beta_1 + \beta_2 + ... + \beta_i $ is divisible by 3. From the algebra done in the equations above, and by the definition of equality, we can follow the last equation\\ \begin{center}
-$[ \beta_0+ \beta_1 + \beta_2 + ... + \beta_i ]\bmod 3 = 0$
-\end{center} from bottom up and thus $\beta$ is also divisible by 3.
-\begin{comment} 
-\begin{align*}
-( \beta_0+ \beta_1 + \beta_2 + ... + \beta_i )\bmod 3 &= 0\\
-( (\beta_0) \bmod 3 + (\beta_1)\bmod 3+(\beta_2)\bmod 3 + ... + (\beta_i)\bmod 3 )\bmod 3 &= \\
-( ((\beta_0)\bmod 3*1) \bmod 3 + ((\beta_1)\bmod 3 * 1) \bmod 3 +((\beta_2)\bmod 3 * 1)\bmod 3)+&\\ \bmod 3 + ... + ((\beta_i)\bmod 3 * 1) \bmod 3 )\bmod 3 &=\\
-( ((\beta_0)\bmod 3*(10^0)\bmod3) \bmod 3 + ((\beta_1)\bmod 3 * (10^1)\bmod 3) \bmod 3 & +\\((\beta_2)\bmod 3 * (10^2))\bmod 3) \bmod 3 + ... + ((\beta_i)\bmod 3 * (10^i)\bmod 3) \bmod 3 )\bmod 3 &= \\
-( (\beta_0*10^0) \bmod 3 + (\beta_1 * 10^1) \bmod 3 + (\beta_2 * 10^2) \bmod 3 + ... + (\beta_i * 10^i) \bmod 3 )\bmod 3 &=\\
-( \beta_0*10^0 + \beta_1 * 10^1 + \beta_2 * 10^2 + ... + \beta_i * 10^i ) \bmod 3 &= 0\\
-( \beta) \bmod 3 &= 0
-\end{align*}
-\end{comment}
-
-Thus if the sum of the digits of a number are divisible by 3 then then number itself is divisible by 3.
+Thus if $\beta$ is divisible by three then $\beta\bmod 3 = 0$ and thus the sum if its digits is also divisible by three that is: $[ \beta_0+ \beta_1 + \beta_2 + ... + \beta_i ]\bmod 3 = 0$.\\
+Also if sum the digits of $\beta$ written as $\beta_0+ \beta_1 + \beta_2 + ... + \beta_i $ is divisible by 3 then from the algebra done in the equations above, and by the definition of equality, we easily deduce that beta is also divisible by three\\ 
 
 \end{proof}
 
