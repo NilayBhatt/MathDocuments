@@ -76,19 +76,19 @@
 %\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
-\usepackage{graphicx} % Allows including images
+\usepackage{graphicx, verbatim, lmodern} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Euler Circuits]{Euler Circuits on DiGraph } % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Euler paths and circuits on digraphs and genome sequencing]{Euler paths and circuits on digraphs and genome sequencing} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Nilay Bhatt} % Your name
 \institute[CCSU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-Central Connecticut State University \\ Dr. Rachel Schwell\\ % Your institution for the title page
+Central Connecticut State University \\ % Your institution for the title page
 \medskip
 \textit{nilaybhatt@my.ccsu.edu} % Your email address
 }
@@ -118,15 +118,18 @@ A \textbf{graph} $G$ consists of a non-empty finite set $V(G)$ of elements calle
 and a finite `family'  $ E(G)$ of unordered pairs of (not necessarily distinct) elements
 of $V(G)$ called \textbf{edges}.
 \end{definition}
+\pause
 \begin{itemize}
 \item Too formal? Think of a graph as a bunch of tennis balls connected with a thread.
 \end{itemize}
+\pause
 \begin{definition}[Digraph]
 A \textbf{digraph} $G$ consists of a non-empty finite set $V(G)$ of elements called \textbf{vertices},
 and a finite `family'  $E(G)$ of ordered pairs of distinct elements of $V(G)$ called \textbf{directed edges}.
 \end{definition}
+\pause
 \begin{itemize}
-\item NYC grid with the streets being one-way, which then restricts our direction of movement on the graph.
+\item NYC grid with all the streets being one-way, which then restricts our movement on the graph.
 \end{itemize}
 \end{frame}
 
@@ -144,7 +147,7 @@ and a finite `family'  $E(G)$ of ordered pairs of distinct elements of $V(G)$ ca
 %------------------------------------------------
 \section{Eulerian Graphs}
 \begin{frame}
-\frametitle{Euler Paths v/s. Circuits}
+\frametitle{Euler Paths vs. Circuits}
 \begin{definition}[Euler Path]
  An \textbf{Euler path} on a graph $G$ is a special walk that uses each edge exactly once, and it starts and ends at \textbf{different} vertices.
 \end{definition}
@@ -154,7 +157,7 @@ and a finite `family'  $E(G)$ of ordered pairs of distinct elements of $V(G)$ ca
 \end{frame}
 
 %------------------------------------------------
-
+\begin{comment}
 \begin{frame}
 \frametitle{Euler Path}
 \begin{figure}[h]
@@ -164,54 +167,114 @@ and a finite `family'  $E(G)$ of ordered pairs of distinct elements of $V(G)$ ca
 
 %------------------------------------------------
 
-
 \begin{frame}
 \frametitle{Euler Circuit}
 \begin{figure}[h]
 \includegraphics[scale = 0.4]{circuit.png}
 \end{figure}
 \end{frame}
+\end{comment}
 
 %------------------------------------------------
 
 
 \begin{frame}
-\frametitle{Criterion for an Euler path or circuit on a given (di)graph}
+\frametitle{Criterion for an Euler path or circuit on a graph}
 \begin{block}{Euler Path}
-A given \textbf{graph} $G$ has an Euler path if: \textbf{All but 2 vertices in the graph are of odd degree.}\\ A digraph $D_g$ has an Euler path if: the above condition plus \textbf{"the $|indegree - outdegree| = 1$ for given two vertices in $D_g$.}
-\end{block}
-\pause
-\begin{block}{Euler Circuit}
-A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected. 
+A given graph $G$ has an Euler path if and only if the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.}
 \end{block}
 \pause
 \begin{itemize}
-\item What extra condition do you think will be needed on a digraph?
+\item What extra condition do you think we need to add for a digraph to have an Euler path?
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Criterion for an Euler path or circuit on a given (di)graph}
-\begin{block}{Euler Circuit on digraphs}
-A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected and \textbf{the indegree = outdegree for all vertices}
+\frametitle{Can we find an Euler Path?}
+\begin{figure}[h]
+\includegraphics[scale = 0.628]{pathdi.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{YES WE CAN!}
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{pathdisol.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Criterion for an Euler path on a digraph}
+\begin{block}{Euler Path}
+A given graph $G$ has an Euler path if and only if the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.}
 \end{block}
 
+\begin{block}{Euler Path on a digraph}
+A digraph $D_g$ has an Euler path iff the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.} plus \textbf{"the $|indegree - outdegree| = 1$ for given two vertices in $D_g$.}
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Criterion for an Euler circuit on a digraph}
+\begin{block}{Euler Circuit}
+A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected. 
+\end{block}
 \pause
- A theorem with proper proof done for the semester project in \textbf{Seminar in Proof} course.
+\begin{itemize}
+\item What extra condition do you think will be needed on a digraph for it to have an Euler circuit?
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Euler Circuit on digraph}
+\begin{figure}[h]
+\includegraphics[scale = 0.8]{eulerdi.jpg}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Criterion for an Euler circuit on a digraph}
+\begin{block}{Euler Circuit}
+A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected. 
+\end{block}
+\begin{block}{Euler circuit on a digraph}
+A graph $D_g$ has and Euler circuit if and only if all the vertices are of
+even degree and is connected and the \textbf{indegree = outdegree}
+for all vertices.
+\end{block}
+\begin{itemize}
+\item A formal proof done as part of the final project in Senior Seminar Spring 2017.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
 \frametitle{How to find an Euler path and/or circuit on a graph?}
+Recall: For an Euler Path all but 2 vertices must be odd and an euler circuit all vertices must be of even degree.
+\pause
+\\ {\color{red} While traversing (removing edges once traversed) if removal of a single edge from the remaining connected graph makes it disconnected then such an edge is called a \textbf{bridge}.}
+
 \begin{itemize}
-\item The graph has to be connected
+
+\item To traverse an Euler path, start at either of the odd vertex.
 \pause
-\item For an Euler Path there can be either $0$ or $2$ odd degree vertices. For an circuit all of them has to be even. To traverse an Euler path, start at either of the odd vertex.
-\pause
-\item Follow edges one at a time. If you have a choice between a bridge and a non-bridge, always choose the non-bridge. (If removal of a single edge from a connected graph can make it disconnected then such an edge is called a \textbf{bridge}.)
+\item Follow edges one at a time and if you come across a bridge and a non-bridge:
+\begin{itemize}
+\item Bridge-Non-Bridge: Choose Non-bridge
+\end{itemize}
 \end{itemize}
 \pause
 This is called \textbf{Fleury's Algorithm}
@@ -230,17 +293,8 @@ This is called \textbf{Fleury's Algorithm}
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Euler Circuit on digraph}
-\begin{figure}[h]
-\includegraphics[scale = 0.8]{eulerdi.jpg}
-\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
 \frametitle{What's next?}
-This is cool, but for all the applied mathematicians in the room and computer engineers like me the question lies:\\ 
+This is cool, but for all the applied mathematicians in the room and computer engineers like me the question becomes:\\ 
 \textbf{\begin{center}
 How does that help me?
 \end{center}}
@@ -250,12 +304,53 @@ How does that help me?
 
 %------------------------------------------------
 %------------------------------------------------
+\section{Applications}
+%------------------------------------------------
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Applications}
+\begin{enumerate}
+\item Mathematical modeling
+\pause
+\item DNA fragment reconstruction
+\pause 
+\item Postman problem
+\pause
+\item Traveling salesman problem
+
+\item many more ....
+\end{enumerate}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Applications}
+\begin{enumerate}
+\item Mathematical modeling
+\item {\color{red}\textbf{DNA fragment reconstruction}}
+\item Postman problem
+\item Traveling salesman problem
+
+\item many more ....
+\end{enumerate}
+\end{frame}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+%------------------------------------------------
 \section{Genome Sequencing}
 %------------------------------------------------
 %------------------------------------------------
 
 %------------------------------------------------
 
+\begin{comment}
 \begin{frame}
 \frametitle{Multiple Columns}
 \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
@@ -273,9 +368,98 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ul
 
 \end{columns}
 \end{frame}
+\end{comment}
 
 %------------------------------------------------
-\section{Second Section}
+
+\begin{frame}
+\frametitle{Genome Sequencing}
+\textbf{DNA}
+\begin{columns}[c]
+
+\column{.45\textwidth}
+
+\begin{figure}[h]
+\includegraphics[scale = 0.35]{dna.jpg}
+\end{figure}
+
+\column{.45\textwidth}
+
+
+\begin{itemize}
+\item Protein that stores the genetic information of a living organism
+\pause
+\item Four components to it: A,T,G,C. A connects to T and G connects to C
+\pause
+\item Fragments of DNA is used in genetic research and discovery
+%\item If any cancer is genetically triggered, or how hereditary diabetes is and how mutations occur
+\item Strings of such {\color{red}ATGC} pairs have this information stored in them
+\pause
+\end{itemize}
+
+
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Genome Sequencing}
+\begin{itemize}
+\item Reads are taken of a known DNA strand (Sanger, 1977)
+\item They vary in size from 30-800 nucleotides
+\item Reads are taken in an overlapping form
+\item Reconstructing the specific genome with the overlapping to create a superstring is NP-complete
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Shortest Super String Problem}
+Problem: \textbf{Given a set of strings, find a shortest string that contains all of them} - NP Complete
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{ssexample.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{De Bruijn Sequence Approach}
+\begin{itemize}
+\item Given a string, split it into $k$-mers
+\pause
+\item Then split each $k$-mer into $k-1$-mer
+\pause
+\item Now assign the two $k-1$-mer as vertices and the $k-$mer as the name of the directed edge
+\pause
+\item Consolidate the duplicate edges (collapse them, while conserving the directed edges
+\pause
+\item The final directed Euler Path is the super string
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{What a $k$-mer composition of a given genome string}
+
+Given a string : \textbf{\textit{TAATGCCATGGGATGTT}}, what is a 3-mer composition?\\
+= $\{TAA, AAT, ATG, TGC, GCC, CCA, CAT,$\\ $ ATG, TGG, GGG, GGA, GAT, ATG, TGT, GTT\}$
+\begin{itemize}
+\item We use these 3-mers as labels of directed edges.
+\pause
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{3mer.png}
+\end{figure}
+\pause
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{3mer2mer.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
 %------------------------------------------------
 
 \begin{frame}

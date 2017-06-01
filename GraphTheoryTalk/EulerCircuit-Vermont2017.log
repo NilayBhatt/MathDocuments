@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  30 MAY 2017 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  1 JUN 2017 10:23
 entering extended mode
 **./EulerCircuit-Vermont2017.tex
 (EulerCircuit-Vermont2017.tex
@@ -698,7 +698,47 @@ outerthemesplit.sty))
 (C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\themes\color\beamer
 colorthemeorchid.sty)
 (C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\themes\color\beamer
-colorthemewhale.sty))
+colorthemewhale.sty)) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.st
+y"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks43
+\verbatim@line=\toks44
+\verbatim@in@stream=\read2
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
 (C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen188
@@ -736,7 +776,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 97.
 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -778,12 +823,12 @@ LaTeX Font Info:    ... okay on input line 97.
 \scratchbox=\box53
 \nofMPsegments=\count159
 \nofMParguments=\count160
-\everyMPshowfont=\toks43
+\everyMPshowfont=\toks45
 \MPscratchCnt=\count161
 \MPscratchDim=\dimen258
 \MPnumerator=\count162
 \makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks44
+\everyMPtoPDFconversion=\toks46
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -818,57 +863,51 @@ LaTeX Info: Redefining \nameref on input line 97.
 \openout5 = `EulerCircuit-Vermont2017.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 97.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 97.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 97.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 97.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 97.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 97.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 97.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 97.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 97.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 97.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 97.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 97.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 97.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 97.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 97.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 97.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 97.
+(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 97.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 97.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 97.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 9
-7.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-97.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 97.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 97.
 
 (C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\dicts\tr
 anslator-basic-dictionary\translator-basic-dictionary-English.dict
@@ -898,128 +937,354 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 97.
 
 (EulerCircuit-Vermont2017.nav)
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 101.
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 101.
+ [1{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-[1{C:/Users/Nilay/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-]
-(EulerCircuit-Vermont2017.toc) [2
+] (EulerCircuit-Vermont2017.toc) [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 131.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 134.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 134
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 134
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 134.
+LaTeX Font Info:    Try loading font information for U+msa on input line 134.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 131.
+LaTeX Font Info:    Try loading font information for U+msb on input line 134.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 131.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
 
-(C:\Users\Nilay\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\ot1mathkern
-cmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-Overfull \vbox (5.11325pt too high) detected at line 131
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
+
+
+Overfull \vbox (5.1125pt too high) detected at line 134
  []
 
 [3
 
-] <graphs.png, id=155, 569.12625pt x 324.46219pt>
-File: graphs.png Graphic file (type png)
- <use graphs.png>
-Package pdftex.def Info: graphs.png used on input line 142.
-(pdftex.def)             Requested size: 307.28987pt x 175.19705pt.
- [4
+]
+Overfull \vbox (5.1125pt too high) detected at line 134
+ []
 
- <./graphs.png>] [5
+[4
 
-] <path.png, id=218, 427.5975pt x 542.77782pt>
-File: path.png Graphic file (type png)
- <use path.png>
-Package pdftex.def Info: path.png used on input line 163.
-(pdftex.def)             Requested size: 128.28023pt x 162.8346pt.
+]
+Overfull \vbox (5.1125pt too high) detected at line 134
+ []
+
+[5
+
+]
+Overfull \vbox (5.1125pt too high) detected at line 134
+ []
 
 [6
 
- <./path.png>] <circuit.png, id=250, 419.31656pt x 410.2828pt>
-File: circuit.png Graphic file (type png)
-
-<use circuit.png>
-Package pdftex.def Info: circuit.png used on input line 173.
-(pdftex.def)             Requested size: 167.72365pt x 164.11021pt.
+] <graphs.png, id=245, 569.12625pt x 324.46219pt>
+File: graphs.png Graphic file (type png)
+ <use graphs.png>
+Package pdftex.def Info: graphs.png used on input line 145.
+(pdftex.def)             Requested size: 307.28987pt x 175.19705pt.
  [7
 
- <./circuit.png>] [8
+ <./graphs.png>] [8
 
 ] [9
 
 ] [10
 
-] [11
+] <pathdi.png, id=369, 224.33812pt x 289.08pt>
+File: pathdi.png Graphic file (type png)
 
-] [12
+<use pathdi.png>
+Package pdftex.def Info: pathdi.png used on input line 199.
+(pdftex.def)             Requested size: 140.88533pt x 181.54352pt.
+ [11
 
-] [13
+ <./pathdi.png>]
+<pathdisol.png, id=401, 350.81062pt x 453.19313pt>
+File: pathdisol.png Graphic file (type png)
+ <use pathdisol.png>
+Package pdftex.def Info: pathdisol.png used on input line 208.
+(pdftex.def)             Requested size: 140.32175pt x 181.27403pt.
+ [12
+
+ <./pathdisol.png>] [13
 
 ] [14
 
 ] [15
 
-]
-[16
-
-] <path2.png, id=556, 602.25pt x 511.15968pt>
-File: path2.png Graphic file (type png)
- <use path2.png>
-Package pdftex.def Info: path2.png used on input line 228.
-(pdftex.def)             Requested size: 240.89572pt x 204.46024pt.
-
-Overfull \vbox (13.78435pt too high) detected at line 228
- []
-
-[17
-
- <./path2.png>] <eulerdi.jpg, id=588, 318.43968pt x 188.95593pt>
+] <eulerdi.jpg, id=525, 318.43968pt x 188.95593pt>
 File: eulerdi.jpg Graphic file (type jpg)
 
 <use eulerdi.jpg>
-Package pdftex.def Info: eulerdi.jpg used on input line 237.
+Package pdftex.def Info: eulerdi.jpg used on input line 243.
 (pdftex.def)             Requested size: 254.75209pt x 151.16493pt.
- [18
+ [16
 
- <./eulerdi.jpg>] [19
+ <./eulerdi.jpg>] [17
+
+] [18
+
+] [19
 
 ] [20
 
 ] [21
 
-] [22
-
 ]
-\openout4 = `EulerCircuit-Vermont2017.vrb'.
+<path2.png, id=709, 602.25pt x 511.15968pt>
+File: path2.png Graphic file (type png)
+ <use path2.png>
+Package pdftex.def Info: path2.png used on input line 291.
+(pdftex.def)             Requested size: 240.89572pt x 204.46024pt.
 
+Overfull \vbox (13.78363pt too high) detected at line 291
+ []
 
-(EulerCircuit-Vermont2017.vrb) [23
+[22
+
+ <./path2.png>] [23
 
 ] [24
 
-]
-\openout4 = `EulerCircuit-Vermont2017.vrb'.
-
- (EulerCircuit-Vermont2017.vrb)
-[25
+] [25
 
 ] [26
 
+] [27
+
+] [28
+
+]
+<dna.jpg, id=919, 451.6875pt x 338.76563pt>
+File: dna.jpg Graphic file (type jpg)
+ <use dna.jpg>
+Package pdftex.def Info: dna.jpg used on input line 402.
+(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
+
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 402--402
+ [] 
+ []
+
+
+Overfull \vbox (2.72348pt too high) detected at line 402
+ []
+
+[29
+
+ <./dna.jpg>]
+File: dna.jpg Graphic file (type jpg)
+ <use dna.jpg>
+Package pdftex.def Info: dna.jpg used on input line 402.
+(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
+
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 402--402
+ [] 
+ []
+
+
+Overfull \vbox (2.72348pt too high) detected at line 402
+ []
+
+[30
+
+]
+File: dna.jpg Graphic file (type jpg)
+ <use dna.jpg>
+Package pdftex.def Info: dna.jpg used on input line 402.
+(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
+
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 402--402
+ [] 
+ []
+
+
+Overfull \vbox (2.72348pt too high) detected at line 402
+ []
+
+[31
+
+]
+File: dna.jpg Graphic file (type jpg)
+ <use dna.jpg>
+Package pdftex.def Info: dna.jpg used on input line 402.
+(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
+
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 402--402
+ [] 
+ []
+
+
+Overfull \vbox (2.72348pt too high) detected at line 402
+ []
+
+[32
+
+] [33
+
+] <ssexample.png, id=1071, 655.69969pt x 355.3275pt>
+File: ssexample.png Graphic file (type png)
+
+<use ssexample.png>
+Package pdftex.def Info: ssexample.png used on input line 424.
+(pdftex.def)             Requested size: 262.27522pt x 142.12846pt.
+ [34
+
+ <./ssexample.png>] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+]
+LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 461
+.
+
+<3mer.png, id=1255, 773.13844pt x 69.25874pt>
+File: 3mer.png Graphic file (type png)
+ <use 3mer.png>
+Package pdftex.def Info: 3mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
+
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+<3mer2mer.png, id=1256, 774.64406pt x 107.65219pt>
+File: 3mer2mer.png Graphic file (type png)
+ <use 3mer2mer.png>
+Package pdftex.def Info: 3mer2mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
+
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 461.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 461.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 461.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 461.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 461.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 461.
+
+[40
+
+ <./3mer.png> <./3mer2mer.png>]
+File: 3mer.png Graphic file (type png)
+ <use 3mer.png>
+Package pdftex.def Info: 3mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
+
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+File: 3mer2mer.png Graphic file (type png)
+<use 3mer2mer.png>
+Package pdftex.def Info: 3mer2mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
+
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+[41
+
+]
+File: 3mer.png Graphic file (type png)
+ <use 3mer.png>
+Package pdftex.def Info: 3mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
+
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+File: 3mer2mer.png Graphic file (type png)
+<use 3mer2mer.png>
+Package pdftex.def Info: 3mer2mer.png used on input line 461.
+(pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
+
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 461--461
+ [] 
+ []
+
+[42
+
+] [43
+
+] [44
+
+]
+\openout4 = `EulerCircuit-Vermont2017.vrb'.
+
+ (EulerCircuit-Vermont2017.vrb
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 3.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) [45
+
+] [46
+
+]
+\openout4 = `EulerCircuit-Vermont2017.vrb'.
+
+
+(EulerCircuit-Vermont2017.vrb) [47
+
+]
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 535.
+
+ [48
+
  <C:/Users/Nilay/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/art/beamericonarti
-cle.pdf>] [27
+cle.pdf>] [49
 
 ]
 \tf@nav=\write6
@@ -1031,41 +1296,45 @@ cle.pdf>] [27
 \tf@snm=\write8
 \openout8 = `EulerCircuit-Vermont2017.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
- (EulerCircuit-Vermont2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
+
+(EulerCircuit-Vermont2017.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `EulerCircuit-Vermont2017.out' has not change
 d.
-(rerunfilecheck)             Checksum: F3107FAD84FF7769237A87E721EDEDA0;201.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.0pt have occurred.
-
+(rerunfilecheck)             Checksum: E9D06F8E50B002A1BBBCAB28F53D6EAB;199.
  ) 
 Here is how much of TeX's memory you used:
- 17412 strings out of 493333
- 336851 string characters out of 3139194
- 404083 words of memory out of 3000000
- 20458 multiletter control sequences out of 15000+200000
- 12833 words of font info for 46 fonts, out of 3000000 for 9000
+ 17673 strings out of 493333
+ 341087 string characters out of 3139194
+ 407100 words of memory out of 3000000
+ 20646 multiletter control sequences out of 15000+200000
+ 60498 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,69p,792b,810s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mssi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on EulerCircuit-Vermont2017.pdf (27 pages, 542203 bytes).
+ 56i,19n,69p,792b,636s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Navigation50} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
+.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
+/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmsso9.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmt
+t10.pfb>
+Output written on EulerCircuit-Vermont2017.pdf (49 pages, 1074128 bytes).
 PDF statistics:
- 952 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1651 PDF objects out of 1728 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

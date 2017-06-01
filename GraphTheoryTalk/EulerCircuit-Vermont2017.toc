@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Definitions}{3}{0}{1}
-\beamer@sectionintoc {2}{Eulerian Graphs}{5}{0}{2}
-\beamer@sectionintoc {3}{Genome Sequencing}{20}{0}{3}
-\beamer@sectionintoc {4}{Second Section}{21}{0}{4}
+\beamer@sectionintoc {2}{Eulerian Graphs}{8}{0}{2}
+\beamer@sectionintoc {3}{Applications}{24}{0}{3}
+\beamer@sectionintoc {4}{Genome Sequencing}{29}{0}{4}
