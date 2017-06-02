@@ -269,7 +269,7 @@ for all vertices.
 
 \begin{frame}
 \frametitle{How to find an Euler path and/or circuit on a graph?}
-Recall: For an Euler Path all but 2 vertices must be of odd degree and to have an Euler circuit has all vertices must be of even degree.
+Recall: For an Euler Path all but 2 vertices must be of odd degree and to have an Euler circuit, all vertices must be of even degree.
 \pause
 \\  While traversing (removing edges once traversed), if removal of a single edge from the remaining connected graph makes it disconnected then such an edge is called a \textbf{bridge}.
 
@@ -277,7 +277,7 @@ Recall: For an Euler Path all but 2 vertices must be of odd degree and to have a
 
 \item To create an Euler path, start at either of the odd vertices.
 \pause
-\item Follow edges one at a time and if you come across a bridge and a non-bridge: Always choose Non-bridge
+\item Follow edges one at a time and if you come across a bridge and a non-bridge: Always choose non-bridge
 \end{itemize}
 \pause
 This is called \textbf{Fleury's Algorithm}
@@ -310,6 +310,20 @@ How does that help me?
 \section{Applications}
 %------------------------------------------------
 %------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Applications}
+\begin{enumerate}
+\item Mathematical modeling
+\item DNA fragment reconstruction
+\item Postman problem
+\item Traveling salesman problem
+
+\item many more ....
+\end{enumerate}
+\end{frame}
 
 %------------------------------------------------
 
@@ -388,7 +402,7 @@ Problem: \textbf{Given a set of strings, find a shortest string that contains al
 \pause
 \item Now assign the two $k-1-mers$ as vertices and the $k-mer$ as the name of the directed edge
 \pause
-\item Consolidate the duplicate edges (collapse them, while conserving the directed edges
+\item Consolidate the duplicate edges (collapse them, while conserving the directed edges)
 \pause
 \item The final directed Euler Path is the super string
 \end{itemize}

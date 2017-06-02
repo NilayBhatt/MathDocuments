@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  2 JUN 2017 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  2 JUN 2017 15:30
 entering extended mode
 **./EulerCircuit-Vermont2017.tex
 (EulerCircuit-Vermont2017.tex
@@ -1063,56 +1063,56 @@ Overfull \vbox (7.28377pt too high) detected at line 294
 
 ] [24
 
-] <dna.jpg, id=768, 451.6875pt x 338.76563pt>
+] [25
+
+] <dna.jpg, id=800, 451.6875pt x 338.76563pt>
 File: dna.jpg Graphic file (type jpg)
 
 <use dna.jpg>
-Package pdftex.def Info: dna.jpg used on input line 356.
+Package pdftex.def Info: dna.jpg used on input line 370.
 (pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
 
-Overfull \hbox (19.81349pt too wide) in paragraph at lines 356--356
- [] 
- []
-
-[25
-
- <./dna.jpg>]
-File: dna.jpg Graphic file (type jpg)
- <use dna.jpg>
-Package pdftex.def Info: dna.jpg used on input line 356.
-(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
-
-Overfull \hbox (19.81349pt too wide) in paragraph at lines 356--356
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 370--370
  [] 
  []
 
 [26
 
-]
+ <./dna.jpg>]
 File: dna.jpg Graphic file (type jpg)
  <use dna.jpg>
-Package pdftex.def Info: dna.jpg used on input line 356.
+Package pdftex.def Info: dna.jpg used on input line 370.
 (pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
 
-Overfull \hbox (19.81349pt too wide) in paragraph at lines 356--356
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 370--370
  [] 
  []
 
 [27
 
-] [28
+]
+File: dna.jpg Graphic file (type jpg)
+ <use dna.jpg>
+Package pdftex.def Info: dna.jpg used on input line 370.
+(pdftex.def)             Requested size: 158.09299pt x 118.56973pt.
 
-] <ssexample.png, id=886, 655.69969pt x 355.3275pt>
+Overfull \hbox (19.81349pt too wide) in paragraph at lines 370--370
+ [] 
+ []
+
+[28
+
+] [29
+
+] <ssexample.png, id=915, 655.69969pt x 355.3275pt>
 File: ssexample.png Graphic file (type png)
 
 <use ssexample.png>
-Package pdftex.def Info: ssexample.png used on input line 378.
+Package pdftex.def Info: ssexample.png used on input line 392.
 (pdftex.def)             Requested size: 262.27522pt x 142.12846pt.
- [29
+ [30
 
- <./ssexample.png>] [30
-
-] [31
+ <./ssexample.png>] [31
 
 ] [32
 
@@ -1120,129 +1120,129 @@ Package pdftex.def Info: ssexample.png used on input line 378.
 
 ] [34
 
+] [35
+
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 415
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 429
 .
 
-<3mer.png, id=1063, 773.13844pt x 69.25874pt>
+<3mer.png, id=1094, 773.13844pt x 69.25874pt>
 File: 3mer.png Graphic file (type png)
  <use 3mer.png>
-Package pdftex.def Info: 3mer.png used on input line 415.
+Package pdftex.def Info: 3mer.png used on input line 429.
 (pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
 
-Overfull \hbox (23.86008pt too wide) in paragraph at lines 415--415
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 429--429
  [] 
  []
 
-<3mer2mer.png, id=1064, 774.64406pt x 107.65219pt>
+<3mer2mer.png, id=1095, 774.64406pt x 107.65219pt>
 File: 3mer2mer.png Graphic file (type png)
  <use 3mer2mer.png>
-Package pdftex.def Info: 3mer2mer.png used on input line 415.
+Package pdftex.def Info: 3mer2mer.png used on input line 429.
 (pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
 
-Overfull \hbox (24.46231pt too wide) in paragraph at lines 415--415
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 429--429
  [] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 415.
+(Font)              <14.4> on input line 429.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 415.
+(Font)              <10> on input line 429.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 415.
+(Font)              <7> on input line 429.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 415.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 429.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 415.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 429.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 415.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 429.
 
-[35
+[36
 
  <./3mer.png> <./3mer2mer.png>]
 File: 3mer.png Graphic file (type png)
  <use 3mer.png>
-Package pdftex.def Info: 3mer.png used on input line 415.
+Package pdftex.def Info: 3mer.png used on input line 429.
 (pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
 
-Overfull \hbox (23.86008pt too wide) in paragraph at lines 415--415
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 429--429
  [] 
  []
 
 File: 3mer2mer.png Graphic file (type png)
 <use 3mer2mer.png>
-Package pdftex.def Info: 3mer2mer.png used on input line 415.
+Package pdftex.def Info: 3mer2mer.png used on input line 429.
 (pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
 
-Overfull \hbox (24.46231pt too wide) in paragraph at lines 415--415
- [] 
- []
-
-[36
-
-]
-File: 3mer.png Graphic file (type png)
- <use 3mer.png>
-Package pdftex.def Info: 3mer.png used on input line 415.
-(pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
-
-Overfull \hbox (23.86008pt too wide) in paragraph at lines 415--415
- [] 
- []
-
-File: 3mer2mer.png Graphic file (type png)
-<use 3mer2mer.png>
-Package pdftex.def Info: 3mer2mer.png used on input line 415.
-(pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
-
-Overfull \hbox (24.46231pt too wide) in paragraph at lines 415--415
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 429--429
  [] 
  []
 
 [37
 
-] <gluing.png, id=1158, 822.07124pt x 320.69812pt>
-File: gluing.png Graphic file (type png)
- <use gluing.png>
-Package pdftex.def Info: gluing.png used on input line 424.
-(pdftex.def)             Requested size: 328.82266pt x 128.27696pt.
+]
+File: 3mer.png Graphic file (type png)
+ <use 3mer.png>
+Package pdftex.def Info: 3mer.png used on input line 429.
+(pdftex.def)             Requested size: 309.2499pt x 27.70299pt.
 
-Overfull \hbox (21.53279pt too wide) in paragraph at lines 424--424
+Overfull \hbox (23.86008pt too wide) in paragraph at lines 429--429
+ [] 
+ []
+
+File: 3mer2mer.png Graphic file (type png)
+<use 3mer2mer.png>
+Package pdftex.def Info: 3mer2mer.png used on input line 429.
+(pdftex.def)             Requested size: 309.85213pt x 43.0601pt.
+
+Overfull \hbox (24.46231pt too wide) in paragraph at lines 429--429
  [] 
  []
 
 [38
 
- <./gluing.png>] <gluing2.png, id=1189, 450.18187pt x 434.37282pt>
+] <gluing.png, id=1187, 822.07124pt x 320.69812pt>
+File: gluing.png Graphic file (type png)
+ <use gluing.png>
+Package pdftex.def Info: gluing.png used on input line 438.
+(pdftex.def)             Requested size: 328.82266pt x 128.27696pt.
+
+Overfull \hbox (21.53279pt too wide) in paragraph at lines 438--438
+ [] 
+ []
+
+[39
+
+ <./gluing.png>] <gluing2.png, id=1218, 450.18187pt x 434.37282pt>
 File: gluing2.png Graphic file (type png)
 
 <use gluing2.png>
-Package pdftex.def Info: gluing2.png used on input line 433.
+Package pdftex.def Info: gluing2.png used on input line 447.
 (pdftex.def)             Requested size: 180.06955pt x 173.74605pt.
- [39
-
- <./gluing2.png>]
-<gluing3.png, id=1220, 402.75468pt x 372.64218pt>
-File: gluing3.png Graphic file (type png)
- <use gluing3.png>
-Package pdftex.def Info: gluing3.png used on input line 442.
-(pdftex.def)             Requested size: 161.09901pt x 149.05423pt.
  [40
 
- <./gluing3.png>] <gluingfinal.png, id=1251, 472.76625pt x 440.39531pt>
+ <./gluing2.png>]
+<gluing3.png, id=1249, 402.75468pt x 372.64218pt>
+File: gluing3.png Graphic file (type png)
+ <use gluing3.png>
+Package pdftex.def Info: gluing3.png used on input line 456.
+(pdftex.def)             Requested size: 161.09901pt x 149.05423pt.
+ [41
+
+ <./gluing3.png>] <gluingfinal.png, id=1280, 472.76625pt x 440.39531pt>
 File: gluingfinal.png Graphic file (type png)
 
 <use gluingfinal.png>
-Package pdftex.def Info: gluingfinal.png used on input line 451.
+Package pdftex.def Info: gluingfinal.png used on input line 465.
 (pdftex.def)             Requested size: 189.10315pt x 176.155pt.
- [41
+ [42
 
- <./gluingfinal.png>] [42
-
-] [43
+ <./gluingfinal.png>] [43
 
 ] [44
 
@@ -1250,8 +1250,10 @@ Package pdftex.def Info: gluingfinal.png used on input line 451.
 
 ] [46
 
+] [47
+
 ]
-[47
+[48
 
 ]
 \tf@nav=\write6
@@ -1263,18 +1265,18 @@ Package pdftex.def Info: gluingfinal.png used on input line 451.
 \tf@snm=\write8
 \openout8 = `EulerCircuit-Vermont2017.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
  (EulerCircuit-Vermont2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `EulerCircuit-Vermont2017.out' has not change
 d.
 (rerunfilecheck)             Checksum: 506DA6B053C1753479F63CB46503322C;146.
  ) 
 Here is how much of TeX's memory you used:
- 17513 strings out of 493333
- 336768 string characters out of 3139194
+ 17515 strings out of 493333
+ 336787 string characters out of 3139194
  406851 words of memory out of 3000000
  20500 multiletter control sequences out of 15000+200000
  54697 words of font info for 57 fonts, out of 3000000 for 9000
@@ -1292,9 +1294,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program
 9/fonts/type1/public/lm/lmsso12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmsso8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
 b>
-Output written on EulerCircuit-Vermont2017.pdf (47 pages, 1666174 bytes).
+Output written on EulerCircuit-Vermont2017.pdf (48 pages, 1672584 bytes).
 PDF statistics:
- 1519 PDF objects out of 1728 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
+ 1548 PDF objects out of 1728 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
