@@ -181,7 +181,7 @@ and a finite `family'  $E(G)$ of ordered pairs of distinct elements of $V(G)$ ca
 \begin{frame}
 \frametitle{Criterion for an Euler path or circuit on a graph}
 \begin{block}{Euler Path}
-A given graph $G$ has an Euler path if and only if the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.}
+A given graph $G$ has an Euler path if and only if the graph is connected and \textbf{all but 2 vertices in the graph are of odd degree.}
 \end{block}
 \pause
 \begin{itemize}
@@ -212,11 +212,18 @@ A given graph $G$ has an Euler path if and only if the graph is connected and  \
 \begin{frame}
 \frametitle{Criterion for an Euler path on a digraph}
 \begin{block}{Euler Path}
-A given graph $G$ has an Euler path if and only if the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.}
+A given graph $G$ has an Euler path if and only if the graph is connected and \textbf{all but 2 vertices in the graph are of odd degree.}
 \end{block}
 
 \begin{block}{Euler Path on a digraph}
-A digraph $D_g$ has an Euler path iff the graph is connected and  \textbf{all but 2 vertices in the graph are of odd degree.} plus \textbf{"the $|indegree - outdegree| = 1$ for given two vertices in $D_g$.}
+A digraph $D_g$ has an Euler path iff
+\begin{itemize}
+
+\item The graph is connected 
+\item All but 2 vertices in the graph are of odd degree
+\item \textbf{the \textbf{$|$indegree $-$ outdegree$|$ = 1} for those two odd vertices in $D_g$.}
+
+\end{itemize}
 \end{block}
 \end{frame}
 
@@ -225,7 +232,7 @@ A digraph $D_g$ has an Euler path iff the graph is connected and  \textbf{all bu
 \begin{frame}
 \frametitle{Criterion for an Euler circuit on a digraph}
 \begin{block}{Euler Circuit}
-A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected. 
+A graph $G$ has an Euler circuit if and only if $G$ is connected and all the vertices are of \textbf{even degree} . 
 \end{block}
 \pause
 \begin{itemize}
@@ -247,15 +254,14 @@ A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf
 \begin{frame}
 \frametitle{Criterion for an Euler circuit on a digraph}
 \begin{block}{Euler Circuit}
-A graph $G$ has and Euler circuit if and only if all the vertices are of \textbf{even degree} and is connected. 
+A graph $G$ has an Euler circuit if and only if $G$ is connected and all the vertices are of \textbf{even degree} . 
 \end{block}
 \begin{block}{Euler circuit on a digraph}
-A graph $D_g$ has and Euler circuit if and only if all the vertices are of
-even degree and is connected and the \textbf{indegree = outdegree}
+A graph $D_g$ has an Euler circuit if and only if $D_g$ is connected and all the vertices are of even degree and the \textbf{indegree = outdegree}
 for all vertices.
 \end{block}
 \begin{itemize}
-\item A formal proof done as part of the final project in Senior Seminar Spring 2017.
+\item A formal proof done as part of the final project in Senior Seminar (Spring 2017)
 \end{itemize}
 \end{frame}
 
@@ -263,18 +269,15 @@ for all vertices.
 
 \begin{frame}
 \frametitle{How to find an Euler path and/or circuit on a graph?}
-Recall: For an Euler Path all but 2 vertices must be odd and an euler circuit all vertices must be of even degree.
+Recall: For an Euler Path all but 2 vertices must be of odd degree and to have an Euler circuit has all vertices must be of even degree.
 \pause
-\\ {\color{red} While traversing (removing edges once traversed) if removal of a single edge from the remaining connected graph makes it disconnected then such an edge is called a \textbf{bridge}.}
+\\  While traversing (removing edges once traversed), if removal of a single edge from the remaining connected graph makes it disconnected then such an edge is called a \textbf{bridge}.
 
 \begin{itemize}
 
-\item To traverse an Euler path, start at either of the odd vertex.
+\item To create an Euler path, start at either of the odd vertices.
 \pause
-\item Follow edges one at a time and if you come across a bridge and a non-bridge:
-\begin{itemize}
-\item Bridge-Non-Bridge: Choose Non-bridge
-\end{itemize}
+\item Follow edges one at a time and if you come across a bridge and a non-bridge: Always choose Non-bridge
 \end{itemize}
 \pause
 This is called \textbf{Fleury's Algorithm}
@@ -314,23 +317,6 @@ How does that help me?
 \frametitle{Applications}
 \begin{enumerate}
 \item Mathematical modeling
-\pause
-\item DNA fragment reconstruction
-\pause 
-\item Postman problem
-\pause
-\item Traveling salesman problem
-
-\item many more ....
-\end{enumerate}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Applications}
-\begin{enumerate}
-\item Mathematical modeling
 \item {\color{red}\textbf{DNA fragment reconstruction}}
 \item Postman problem
 \item Traveling salesman problem
@@ -338,37 +324,6 @@ How does that help me?
 \item many more ....
 \end{enumerate}
 \end{frame}
-
-%------------------------------------------------
-
-
-%------------------------------------------------
-%------------------------------------------------
-\section{Genome Sequencing}
-%------------------------------------------------
-%------------------------------------------------
-
-%------------------------------------------------
-
-\begin{comment}
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-\end{comment}
 
 %------------------------------------------------
 
@@ -391,10 +346,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ul
 \pause
 \item Four components to it: A,T,G,C. A connects to T and G connects to C
 \pause
-\item Fragments of DNA is used in genetic research and discovery
+\item Fragments of DNA are used in genetic research and discovery
 %\item If any cancer is genetically triggered, or how hereditary diabetes is and how mutations occur
-\item Strings of such {\color{red}ATGC} pairs have this information stored in them
-\pause
+\item Strings of such {\color{red}ATGC} pairs have this information stored in them	
 \end{itemize}
 
 
@@ -428,11 +382,11 @@ Problem: \textbf{Given a set of strings, find a shortest string that contains al
 \begin{frame}
 \frametitle{De Bruijn Sequence Approach}
 \begin{itemize}
-\item Given a string, split it into $k$-mers
+\item Given a string, split it into $k-mers$
 \pause
-\item Then split each $k$-mer into $k-1$-mer
+\item Then split each $k-mers$ into $k-1-mer$
 \pause
-\item Now assign the two $k-1$-mer as vertices and the $k-$mer as the name of the directed edge
+\item Now assign the two $k-1-mers$ as vertices and the $k-mer$ as the name of the directed edge
 \pause
 \item Consolidate the duplicate edges (collapse them, while conserving the directed edges
 \pause
@@ -443,7 +397,7 @@ Problem: \textbf{Given a set of strings, find a shortest string that contains al
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{What a $k$-mer composition of a given genome string}
+\frametitle{What is a $k-mer$ composition of a given genome string}
 
 Given a string : \textbf{\textit{TAATGCCATGGGATGTT}}, what is a 3-mer composition?\\
 = $\{TAA, AAT, ATG, TGC, GCC, CCA, CAT,$\\ $ ATG, TGG, GGG, GGA, GAT, ATG, TGT, GTT\}$
@@ -463,62 +417,52 @@ Given a string : \textbf{\textit{TAATGCCATGGGATGTT}}, what is a 3-mer compositio
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
+\frametitle{Collapsing like vertices on itself}
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{gluing.png}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
+\frametitle{Collapsing like vertices on itself}
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{gluing2.png}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+\frametitle{Collapsing like vertices on itself}
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{gluing3.png}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
+\begin{frame}
+\frametitle{DeBruijn Graph of TAATGCCATGGGATGTT}
+\begin{figure}[h]
+\includegraphics[scale = 0.4]{gluingfinal.png}
+\end{figure}
+\end{frame}
 
-This statement requires citation \cite{p1}.
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Reconstruction of TAATGCCATGGGATGTT}
+\begin{itemize}
+\item An Euler path on this digraph successfully constructs the genome that we are interested in. Of course for the demonstration purposes we started with the genome itself, but in reality all we have are partial reads
+\pause
+\item Debruijn graph holds the same data as the given genome does!
+\pause
+\item What if there are multiple Euler paths?
+\pause
+\item That is where we use paired Debruijn graphs (A special form of 4-mer and 6-mer pairing)
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
