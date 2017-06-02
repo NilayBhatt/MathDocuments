@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  1 JUN 2017 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.22)  1 JUN 2017 22:42
 entering extended mode
 **./EulerCircuit-Vermont2017.tex
 (EulerCircuit-Vermont2017.tex
@@ -1248,14 +1248,10 @@ Package pdftex.def Info: gluingfinal.png used on input line 451.
 
 ] [45
 
+] [46
+
 ]
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 479.
-
- [46
-
- <C:/Users/Nilay/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/art/beamericonarti
-cle.pdf>] [47
+[47
 
 ]
 \tf@nav=\write6
@@ -1267,21 +1263,21 @@ cle.pdf>] [47
 \tf@snm=\write8
 \openout8 = `EulerCircuit-Vermont2017.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
  (EulerCircuit-Vermont2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
 Package rerunfilecheck Info: File `EulerCircuit-Vermont2017.out' has not change
 d.
 (rerunfilecheck)             Checksum: 506DA6B053C1753479F63CB46503322C;146.
  ) 
 Here is how much of TeX's memory you used:
- 17559 strings out of 493333
- 338323 string characters out of 3139194
- 406880 words of memory out of 3000000
- 20543 multiletter control sequences out of 15000+200000
- 60187 words of font info for 59 fonts, out of 3000000 for 9000
+ 17513 strings out of 493333
+ 336768 string characters out of 3139194
+ 406851 words of memory out of 3000000
+ 20500 multiletter control sequences out of 15000+200000
+ 54697 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,60p,792b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
@@ -1290,16 +1286,15 @@ nc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 mi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmsso12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso9.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on EulerCircuit-Vermont2017.pdf (47 pages, 1702488 bytes).
+ublic/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmsso12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmsso8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
+b>
+Output written on EulerCircuit-Vermont2017.pdf (47 pages, 1667875 bytes).
 PDF statistics:
- 1535 PDF objects out of 1728 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
+ 1519 PDF objects out of 1728 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
